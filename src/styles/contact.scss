@@ -1,0 +1,137 @@
+.section-contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.contact-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    width: 40%;
+    padding: 70px;
+    z-index: 3;
+    background-color: #fff;
+    p {
+        color: rgb(74, 74, 74);
+        font-size: 14px;
+        font-family: "Montserrat Regular";
+        line-height: 1.25;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    h2 {
+        margin-bottom: 40px;
+    }
+}
+
+.contact-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    p {
+        font-family: "Montserrat Regular";
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 0;
+        color: hsla(0, 0%, 0%, 0.8);
+    }
+} 
+
+.contact-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-social-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    img {
+        max-width: 33px;
+        height: auto;
+        margin: 0;
+        margin-right: 20px;
+        transition: margin-right 0.3s ease-in-out;
+    }
+    a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: "Montserrat Regular";
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0px;
+        color: #000;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}
+
+.contact-social-item:hover {
+    opacity: 0.6;
+    img {
+        margin-right: 30px;
+    }
+}
+
+.contact-form {
+    width: 60%;
+    background-color: #F5F4F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    input {
+        width: 100%;
+        color: #4a4a4a;
+        font-size: 14px;
+        font-family: "Montserrat Regular";
+        line-height: 1.25;
+        font-weight: 400;
+        border: none;
+        border-bottom: 2px solid #4a4a4a;
+        height: 35px; 
+        margin-bottom: 35px;
+        padding: 10px;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+    }
+}
+
+.message-input {
+    height: 200px!important;
+}
+
+.send-button {
+    font-family: "Montserrat Regular";
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(238, 71, 111);
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(81, 26, 136);
+    margin: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}

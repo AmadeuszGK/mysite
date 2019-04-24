@@ -1,16 +1,21 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Helmet from "react-helmet"
-import { withPrefix } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <Helmet>
-    <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js" type="text/javascript" />
-    <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.jsgit " type="text/javascript" />
-    <script src={withPrefix('canvas.js')} type="text/javascript" />
-    </Helmet>
-    <canvas id="stars" width="300" height="300"></canvas>
+  <header style={{height: 100 + 'vh'}}>
+    <div className="canvas-container">
+     <canvas id="stars" width="300"></canvas>
+     <div className="canvas-text">
+     <h1>AMADEUSZ<br />
+     GRZESIAK</h1>
+     <h2></h2>
+     <p>NOWOCZESNE, RESPONSYWNE STRONY I SKLEPY INTERNETOWE</p>
+     </div>
+     <div className="scroll-down">
+    <p>SCROLL DOWN</p><br />
+    <img src="../../../arrows-white.svg" alt="arrow"></img>
+    </div>
+     </div>
   </header>
 )
 
