@@ -3,7 +3,7 @@ import React from "react"
 
 
 const Contact = ({ siteTitle }) => (
-    <section className="section-contact">
+    <section className="section-contact" id="section-contact">
         <div className="contact-box">
 
             <div className="contact-details">
@@ -32,8 +32,8 @@ const Contact = ({ siteTitle }) => (
             </div>
 
             <div className="contact-form">
-                <input type="text" value="twój e-mail"></input>
-                <input type="text" value="w czym mogę Ci pomóc?" className="message-input"></input>
+                <input type="text" defaultValue="twój e-mail" type="email"></input>
+                <input type="text" defaultValue="w czym mogę Ci pomóc?" className="message-input"  type="text"></input>
                 <button className="send-button">wyślij</button>
             </div>
         </div>

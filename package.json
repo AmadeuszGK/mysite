@@ -14,11 +14,14 @@
     "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.17",
+    "jquery": "^3.4.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "smooth-scroll": "^16.0.3",
+    "typed.js": "^2.0.10"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

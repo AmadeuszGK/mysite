@@ -1,5 +1,8 @@
 footer {
-    background-color: #511a88;
+    background-image: url('/footer-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     padding-left: 140px;
@@ -14,17 +17,25 @@ footer {
         margin: 0;
     }
     li {
+        list-style-type: none;
+        margin: 0;
+    }
+    .footer-menu-item {
         font-family: "Montserrat Regular";
         font-weight: 600;
         font-size: 13px;
         text-align: center;
-        color: #ee476f;
+        color: #fff;
         margin: 0px;
         text-decoration: none;
         text-transform: uppercase;
         padding-left: 20px;
         padding-right: 20§px;
         list-style-type: none;
+        transition: color 0.2s ease-in-out;
+    }
+    .footer-menu-item:hover {
+        color: rgb(180, 180, 180);
     }
     p {
         font-family: "Montserrat Regular";

@@ -6,17 +6,45 @@
 }
 
 .portfolio-container {
-    background: linear-gradient(137.86deg,#4a00d8,#7512b7 23.75%,#fc4d4e);
-    width: 58%;
+   // background: linear-gradient(137.86deg,#4a00d8,#7512b7 23.75%,#fc4d4e);
+   background-image: url('/header-bg-mac.jpg');
+   background-attachment: fixed; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    width: 65%;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+
+.portfolio-container-content {
     padding-left: 120px;
     padding-top: 70px;
     padding-right: 60px;
     padding-bottom: 140px;
-    margin-bottom: 50px;
-    z-index: 2;
-    position: absolute;
-    left: 0;
+    z-index: 4;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    position: relative;
+    background: inherit;
+	overflow: hidden;
 }
+
+
+.portfolio-container-content:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	filter: blur(10px);
+	margin: -20px;
+}
+
 
 .portfolio-image {
     width: 100%;
@@ -85,9 +113,10 @@
 
 .portfolio-bigimage {
     position: absolute;
-    width: 58%;
-    z-index: 1;
+    width: 40%;
+    z-index: 6;
     right: 0;
+    top: 70px;
     background-color: #333;
-    height: 53.57143rem;
+    height: 30.57143rem;
 }

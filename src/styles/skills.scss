@@ -6,7 +6,7 @@
     width: 100%;
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .skills-box {
@@ -24,7 +24,10 @@
     height: 20.71429rem;
     top: -50px;
     left: -50px;
-    background-color: #511A88;
+    background-image: url('/box-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 2;
 }
 
@@ -72,13 +75,41 @@
 
 .skills {
     width: 60%;
+    background-image: url('/mac-details.jpg');
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    position: relative;
+}
+
+.all-skills {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: #4a4a4a;
+    margin: 0;
     padding: 70px;
-    z-index: 3;
+    height: 100%;
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+
+.all-skills:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	filter: blur(3px);
+	margin: -20px;
 }
 
 .skill-container {

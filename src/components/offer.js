@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Offer = ({ siteTitle }) => (
-<section className="section-offer">
+<section className="section-offer" id="section-offer">
 
     <div className="offer-grid">
 

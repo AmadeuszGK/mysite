@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Skills = ({ siteTitle }) => (
-  <section className="section-skills">
+  <section className="section-skills" id="section-skills">
 
 <div className="skills-box">
 
@@ -20,6 +20,7 @@ const Skills = ({ siteTitle }) => (
   </div>
 
   <div className="skills">
+    <div className="all-skills">
         <div className="skill-container">
           <img className="skill-image" src="../../../javascript.png" alt="javascript"></img>
           <p className="skill-text">javascript</p>
@@ -69,7 +70,7 @@ const Skills = ({ siteTitle }) => (
         <p className="skill-text">figma</p>
         </div> 
       </div>
-
+    </div>
     </div>
   </section>
 )
