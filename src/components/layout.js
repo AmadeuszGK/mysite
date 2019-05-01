@@ -41,7 +41,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <Helmet>
-        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js" type="text/javascript" />
+
+        <script src={withPrefix('delaunay.js')} type="text/javascript" />
         <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js" type="text/javascript" />
       
 
@@ -81,14 +82,14 @@ const Layout = ({ children }) => (
 
          <div className="side-menu-bottom">
             <div className="side-menu-social">
-               <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160"> <img src="../../../linkedin-brands.svg" alt="linked"></img></a> 
-               <a href="https://www.facebook.com/grzesiak.amadeusz"><img src="../../../facebook-square-brands.svg" alt="facebook"></img></a> 
+               <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160"> <img src="../../../linkedin-brands-white.png" alt="linked"></img></a> 
+               <a href="https://www.facebook.com/grzesiak.amadeusz"><img src="../../../facebook-square-brands-white.png" alt="facebook"></img></a> 
             </div>
             <div className="side-menu-contact">
-               <a href="tel:796536228"> <img src="../../../phone-solid.svg" alt="phone"></img>+48 796 536 228</a> 
+               <a href="tel:796536228"> <img src="../../../phone-solid-white.png" alt="phone"></img>+48 796 536 228</a> 
             </div>
             <div className="side-menu-contact">
-               <a href="mailto:grzesiak.amadeusz@gmail.com"><img src="../../../envelope-regular.svg" alt="email"></img>grzesiak.amadeusz@gmail.com</a>
+               <a href="mailto:grzesiak.amadeusz@gmail.com"><img src="../../../envelope-regular-white.png" alt="email"></img>grzesiak.amadeusz@gmail.com</a>
             </div>
          </div>
     

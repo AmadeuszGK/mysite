@@ -24,27 +24,42 @@
     padding-left: 120px;
     padding-right: 15px;
     height: calc(100vh - 10rem);
+    position: relative;
     p {
         font-family: "Montserrat Light";
         font-size: 32px;
         line-height: 1.25;
-        max-width: 90%;
+        max-width: 48%;
         margin-bottom: 60px;
-        color: hsla(0, 0%, 0%, 0.8);
+        color: #000;
     }
     a {
         font-family: "Montserrat Regular";
         font-weight: 600;
         font-size: 13px;    
         text-align: center;
-        color: #EE476F;
+        color: #fff;
         width: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
         margin: 0;
         text-decoration: none;
-        background-color: #111D2E;
+        background-color: #d83434;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        letter-spacing: 1px;
+        transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+    a:hover {
+        transform: translateX(15px);
+        background-color: #ff3535;
+    }
+    h1 {
+        padding-bottom: 70px;
+        font-family: "Montserrat Bold";
+        font-weight: 800;
+        color: #000;
+        margin: 0;
+        font-size: 40px;
     }
 
     // a:hover {
@@ -65,9 +80,11 @@
         font-size: 13px;
         letter-spacing: 1px;
         margin: 0;
-        color: hsla(0, 0%, 0%, 0.8);
+        color: #000;
     }
 }
+
+
 
 .about-me-images {
     position: relative;
@@ -84,6 +101,12 @@
     background-color: rgb(90, 90, 90);
     z-index: 2;
     width: calc(100% - 70px);
+    box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
+    background-image: url('/me.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
 .about-me-box {
@@ -92,15 +115,16 @@
     bottom: -70px;
     width: 80%;
     height: calc(9.09722vw + 12rem);
-    background-color: #000;
+    background-color: rgb(27, 27, 27);
     z-index: 0;
+    box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
 }
 
 
 .flat-line {
     width: 21px;
     height: 2px;
-    background-color: #4A2AD7;
+    background-color: #d83434;
     margin-right: 15px;
 }
 
@@ -111,7 +135,10 @@
     min-height: 70px;
     border-top: 1px solid #cfcfcf;
     margin-top: 60px;
-    max-width: 90%;
+    position: absolute;
+    bottom: -13px;
+    left: 120px;
+    width: 66%;
     p {
         font-family: "Montserrat Regular";
         font-size: 14px;
@@ -129,3 +156,383 @@
         letter-spacing: 1.86px;
     }
 }
+
+.flat-line-text {
+    font-family: "Montserrat Regular";
+    font-weight: 600;
+    font-size: 13px!important;
+    letter-spacing: 1px;
+    margin: 0!important;
+    color: hsla(0, 0%, 0%, 0.8);
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-about-me {
+        padding: 0;
+        height: auto;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-text {
+        padding-top: 50px;
+        height: 100vh;
+        margin: 0;
+        max-width: calc(100% - 70px);
+        padding-left: 35px;
+        padding-right: 0;
+        h1 {
+            font-size: 30px;
+            padding-bottom: 50px;
+            max-width: 90%;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 50px;
+            max-width: 90%;
+        }
+        a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            width: 180px;
+        }
+    }
+  
+    .about-me-header {
+        margin-bottom: 30px;
+    }
+    .typing-box {
+        margin-top: 0;
+        bottom: 0px;
+        left: 35px;
+        width: 70%;
+        min-height: 52px;
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        p {
+            font-size: 12px;
+            margin: 0;
+        } 
+        .word {
+            font-size: 12px;
+            line-height: 25px;
+            height: 25px;
+        }
+    }
+   
+    .about-me-images {
+        height: 70vh;
+    }
+
+    .about-me-image {
+        height: calc(100% - 35px);
+        width: 100%;
+    }
+    .about-me-box {
+        bottom: 0px;
+        left: 35px;
+        width: 100%;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .section-about-me {
+        padding: 0;
+        margin-top: 70px;
+        height: auto;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-text {
+        padding-top: 50px;
+        margin: 0;
+        max-width: 60%;
+        padding-left: 35px;
+        padding-right: 0;
+        height: 100vh;
+        h1 {
+            font-size: 30px;
+            padding-bottom: 50px;
+            max-width: 70%;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 50px;
+            max-width: 80%;
+        }
+        a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            width: 180px;
+        }
+    }
+    .about-me-images {
+        height: 70vh;
+    }
+    .about-me-header {
+        margin-bottom: 50px;
+    }
+    .typing-box {
+        margin-top: 0;
+        top: 84%;
+        left: 80%;
+        width: 80%;
+        bottom: auto; 
+        min-height: 52px;
+        font-size: 12px;
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+        .word {
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+    .about-me-image {
+        height: calc(100% - 70px);
+    }
+    .about-me-box {
+        bottom: 0;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .section-about-me {
+        padding: 0;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-text {
+        padding-top: 40px;
+        height: 50vh;
+        margin: 0;
+        max-width: 60%;
+        padding-left: 70px;
+        padding-right: 0;
+        h1 {
+            font-size: 33px;
+            padding-bottom: 40px;
+            max-width: 70%;
+        }
+        p {
+            font-size: 23px;
+            margin-bottom: 40px;
+            max-width: 80%;
+        }
+        a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            width: 180px;
+        }
+    }
+    .about-me-images {
+        height: 50vh;
+    }
+    .about-me-header {
+        margin-bottom: 40px;
+    }
+    .typing-box {
+        margin-top: 0;
+        top: 84%;
+        left: 82%;
+        width: 75%;
+        bottom: auto; 
+        min-height: 52px;
+        font-size: 13px;
+        p {
+            font-size: 13px;
+            margin: 0;
+        }
+    }
+    .about-me-image {
+        height: calc(100% - 70px);
+    }
+    
+    .about-me-box {
+        bottom: 0;
+        width: calc(100% - 70px);
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .section-about-me {
+        padding: 0;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-text {
+        padding-top: 70px;
+        height: 50vh;
+        margin: 0;
+        max-width: 60%;
+        h1 {
+            padding-bottom: 50px;
+            max-width: 70%;
+        }
+        p {
+            font-size: 30px;
+            margin-bottom: 50px;
+            max-width: 70%;
+        }
+    }
+    .about-me-images {
+        height: 50vh;
+    }
+    .about-me-header {
+        margin-bottom: 50px;
+    }
+    .typing-box {
+        margin-top: 0;
+        top: 83%;
+        left: 90%;
+        bottom: auto; 
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+    .about-me-image {
+        height: calc(100% - 70px);
+    }
+    .about-me-box {
+        bottom: 0;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1500.98px) { 
+    .about-me-header {
+        margin-bottom: 50px;
+    }
+    .about-me-text {
+        h1 {
+            padding-bottom: 50px;
+            max-width: 70%;
+        }
+        p {
+            font-size: 30px;
+            margin-bottom: 50px;
+            max-width: 67%;
+        }
+    }
+    .typing-box {
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+ }
+
+ @media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
+    .section-about-me {
+        padding: 0;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me-text {
+        padding-top: 30px;
+        height: 100vh;
+        margin: 0;
+        max-width: calc(100% - 70px);
+        padding-left: 50px;
+        padding-right: 0;
+        h1 {
+            font-size: 27px;
+            padding-bottom: 30px;
+            max-width: 90%;
+        }
+        p {
+            font-size: 17px;
+            margin-bottom: 30px;
+            max-width: 80%;
+        }
+        a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            width: 180px;
+        }
+    }
+  
+    .about-me-header {
+        margin-bottom: 30px;
+    }
+   
+    .about-me-images {
+        height: 80vh;
+    }
+
+    .about-me-image {
+        height: 100%;
+        width: 100%;
+    }
+    .about-me-box {
+        bottom: -70px;
+        right: auto;
+        right: 70px;
+        width: 100%;
+    }
+    .typing-box {
+        left: 50px;
+        top: 85%;
+        p {
+            font-size: 13px;
+            margin: 0;
+        }
+        .word {
+            font-size: 13px;
+        }
+    }
+ }
+
+//  @media (min-width: 851px) and (max-width: 1300px) and (orientation: landscape) {
+//     .about-me-header {
+//         margin-bottom: 50px;
+//     }
+//     .about-me-text {
+//         padding-top: 70px;
+//         height: 100vh;
+//         margin: 0;
+//         max-width: 50%;
+//         padding-left: 100px;
+//         h1 {
+//             padding-bottom: 50px;
+//             max-width: 70%;
+//         }
+//         p {
+//             font-size: 30px;
+//             margin-bottom: 50px;
+//             max-width: 70%;
+//         }
+//     }
+//     .typing-box {
+//         left: 100px;
+//         top: 88%;
+//         p {
+//             font-size: 13px;
+//             margin: 0;
+//         }
+//         .word {
+//             font-size: 13px;
+//         }
+//     }
+
+//     .about-me {
+//         flex-direction: row;
+//     }
+//     .about-me-images {
+//         height: 80vh;
+//         margin-top: 70px;
+//     }
+//  }

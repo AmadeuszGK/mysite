@@ -20,17 +20,17 @@ const Offer = ({ siteTitle }) => (
         <div className="offer-items">
 
             <div className="offer-item">
-                <img src="../../../offer.png" alt="oferta"></img>
+                <img src="../../../www.png" alt="sklepy stron internetowe"></img>
                 <h3>Strony WWW i Sklepy</h3>
                 <p>Tworzę strony firmowe oraz sklepy internetowe. Wszystko dostosowane do urządzeń mobilnych. Tworzę strony statyczne oraz dynamiczne z wykorzystaniem najnowszych technologii.</p>
             </div>
             <div className="offer-item">
-                <img src="../../../offer.png" alt="oferta"></img>
+                <img src="../../../fix.png" alt="naprawa stron internetowych"></img>
                 <h3>Naprawa starych Stron</h3>
                 <p>Internet jest pełen zepsutych, zaniedbanych lub przestarzałych stron internetowych. Dobieram odpowiednie metody do zaistniałej sytuacji: naprawiam, poprawiam lub oferuję nową, wysoką jakość.</p>
             </div>
             <div className="offer-item">
-                <img src="../../../offer.png" alt="oferta"></img>
+                <img src="../../../settings.png" alt="adminiastracja stron"></img>
                 <h3>Administrowanie stronami</h3>
                 <p>Moi klienci zawsze mogą na mnie liczyć, pomagam w obsłudze stron i skleów internetowych, wdrażam podsyłane treści lub wprowadzam modyfikacje. Ponadto dbam by wszystko było zaktualizowane, działało sprawnie oraz tworzę kopie zapasowe.</p>
             </div>

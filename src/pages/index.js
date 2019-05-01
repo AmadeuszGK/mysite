@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`front-end`, `developer`, `wrocław`, 'strony internetowe', 'sklepy internetowe']} />
+    <SEO title="Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe" keywords={[`front-end`, `developer`, `wrocław`, 'strony internetowe', 'sklepy internetowe']} />
 
   </Layout>
 )

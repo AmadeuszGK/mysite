@@ -14,11 +14,32 @@ const Portfolio = ({ siteTitle }) => (
         </div>
 
         <h2>Zadowoleni klienci</h2>
-        <p>Our digital agency has two goals: optimise every user’s experience, and create real impact for our clients.</p>
+        <p>Naciśnij na logo, aby zobaczyć podląd, krótki opis projektu i przejść pod wybrany adres WWW.</p>
 
       </div>
 
       <div className="portfolio-items">
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+        <div className="portfolio-item">
+          <img src="../../../inlei-logo.png" alt="inlei"></img>
+        </div>
+      </div>
+
+      <div className="portfolio-items-mobile">
         <div className="portfolio-item">
           <img src="../../../inlei-logo.png" alt="inlei"></img>
         </div>
@@ -43,6 +64,9 @@ const Portfolio = ({ siteTitle }) => (
   </div>
 
   <div className="portfolio-bigimage">
+    <h2>Chiara Shop</h2>
+    <p>Sklep internetowy oparty o Wordpress oraz najpopularniejszą wtyczkę e-commerce - Woocommerce. Posiada panel do zarządzania sklepem do dyspozycji właściciela.</p>
+    <a href="https://chiarashop.pl">CHIARASHOP.PL</a>
   </div>
 
 </section>

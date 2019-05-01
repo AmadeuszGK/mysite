@@ -22,7 +22,7 @@
     z-index: 3;
     background-color: #fff;
     p {
-        color: rgb(74, 74, 74);
+        color: rgb(168, 168, 168);
         font-size: 14px;
         font-family: "Montserrat Regular";
         line-height: 1.25;
@@ -99,6 +99,7 @@
     justify-content: center;
     align-items: center;
     padding: 35px;
+    height: 30.57143rem;
     input {
         width: 100%;
         color: #4a4a4a;
@@ -126,12 +127,19 @@
     font-weight: 600;
     font-size: 13px;
     text-align: center;
-    color: rgb(238, 71, 111);
     width: 200px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #111D2E;
+    background-color: #d83434;
+    color: #fff;
+    border: none;
     margin: 0px;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
 }
+
+.send-button:focus {
+    outline: none;
+} 

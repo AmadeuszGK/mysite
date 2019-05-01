@@ -82,9 +82,9 @@ function SEO({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pl`,
   meta: [],
-  keywords: [],
+  keywords: ['strony internetowe', 'sklepy internetowe', 'front end developer', 'wrocław'],
   description: ``,
 }
 

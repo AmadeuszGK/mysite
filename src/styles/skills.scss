@@ -6,7 +6,7 @@
     width: 100%;
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 200px;
+    margin: 0;
 }
 
 .skills-box {
@@ -16,6 +16,7 @@
     margin-left: 50px;
     margin-right: 50px;
     box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
+    height: 33.57143rem;
 }
 
 .skills-top-square {
@@ -37,7 +38,7 @@
     height: 15.71429rem;
     bottom: -50px;
     right: -50px;
-    background-color: #EE476F;
+    background: linear-gradient(to top, #b32a2a 10%, #df3636 100%);
     z-index: 2;
 }
 
@@ -70,6 +71,9 @@
         letter-spacing: 1px;
         margin: 0;
         color: hsla(0, 0%, 0%, 0.8);
+    }
+    .flat-line {
+        background-color: rgb(216, 52, 52);
     }
 } 
 

@@ -19,14 +19,14 @@ var wordflick = function(){
       if (forwards) {
         if(offset >= words[i].length){
           ++skip_count;
-          if (skip_count == skip_delay) {
+          if (skip_count === skip_delay) {
             forwards = false;
             skip_count = 0;
           }
         }
       }
       else {
-         if(offset == 0){
+         if(offset === 0){
             forwards = true;
             i++;
             offset = 0;
@@ -36,7 +36,7 @@ var wordflick = function(){
          }
       }
       part = words[i].substr(0, offset);
-      if (skip_count == 0) {
+      if (skip_count === 0) {
         if (forwards) {
           offset++;
         }
@@ -60,13 +60,16 @@ const About = ({ siteTitle }) => (
         <div className="about-me-text">
             <div className="about-me-header">
               <div className="flat-line"></div>
-              <p>O MNIE</p>
+              <p className="flat-line-text">O MNIE</p>
             </div>
+
+            <h1>Amadeusz Grzesiak</h1>
 
             <p>
             Cześć, jestem kreatywnym front-end&nbsp;developerem z&nbsp;Jeleniej Góry. <br />
             Stwórzmy coś razem!
             </p>
+          
             <a href="https://onet.pl">ZOBACZ MOJE CV</a>
 
             <div className="typing-box">
@@ -77,7 +80,8 @@ const About = ({ siteTitle }) => (
         </div>
 
         <div className="about-me-images">
-          <div className="about-me-image"></div>
+          <div className="about-me-image">
+          </div>
           <div className="about-me-box"></div>
         </div>
 

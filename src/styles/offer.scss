@@ -18,6 +18,7 @@
         font-weight: 800;
         font-size: 26px;    
         margin-bottom: 40px;
+        color: rgb(19, 19, 19);
     }
 }
 
@@ -38,13 +39,13 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 40px;
+    color: rgb(19, 19, 19);
     p {
         font-family: "Montserrat Regular";
         font-weight: 600;
         font-size: 13px;
         letter-spacing: 1px;
         margin: 0;
-        color: hsla(0, 0%, 0%, 0.8);
     }
 } 
 
@@ -71,13 +72,181 @@
         font-size: 22px;
         line-height: 1.25;    
         margin-bottom: 40px;
+        color: rgb(19, 19, 19);
     }
     p {
         color: #4a4a4a;
         font-size: 14px;     
         font-family: "Montserrat Regular";
-        line-height: 1.25;
+        line-height: 20px;
         font-weight: 400;
-
+        margin: 0;
     }
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-offer {
+        padding-left: 35px;
+        padding-right: 35px;
+        height: auto;
+        padding-top: 50px;
+    }
+    .offer-items {
+        width: 100%;
+    }
+    .offer-about {
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: right;
+        padding-right: 35px;
+        p {
+            max-width: 100%;
+            margin: 0;
+            font-size: 19px;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .offer-header {
+        justify-content: flex-end;
+        margin-bottom: 30px;
+        p {
+            font-family: "Montserrat Regular";
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+        
+    .offer-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .offer-item {
+        padding-left: 0;
+        padding-right: 30px;
+        width: 100%;
+        padding-bottom: 40px;
+        img {
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .section-offer {
+        height: auto;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 70px;
+    }
+    .offer-items {
+        width: 100%;
+    }
+    .offer-about {
+        padding-bottom: 70px;
+        width: 100%;
+        p {
+            max-width: 100%;
+            margin: 0;
+            font-size: 19px;
+        }
+    }
+
+    .offer-header {
+        p {
+            font-family: "Montserrat Regular";
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+
+    .offer-item {
+        padding-left: 0;
+        padding-right: 15px;
+        img {
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .section-offer {
+        height: 100vh;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .offer-items {
+        width: 100%;
+    }
+    .offer-about {
+        padding-bottom: 70px;
+        width: 100%;
+        p {
+            max-width: 70%;
+            margin: 0;
+        }
+    }
+    .offer-item {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .section-offer {
+        height: 100vh;
+    }
+    .offer-items {
+        width: 100%;
+    }
+    .offer-about {
+        padding-bottom: 70px;
+        width: 100%;
+        p {
+            max-width: 70%;
+            margin: 0;
+        }
+    }
+    .offer-item {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1430.98px) { 
+    .offer-items {
+        width: 70%;
+    }
+    .offer-about {
+        width: 30%;
+        p {
+            max-width: 70%;
+        }
+    }
+    .section-offer {
+        padding-left: 120px;
+        padding-right: 120px;   
+    }
+ }

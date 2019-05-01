@@ -13,6 +13,20 @@
     height: 100%;
     width: 100%;
   }
+
+  .header-bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url('/header-bg-mac-bottom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
   
   @font-face {
     font-family: "Montserrat Bold";
@@ -36,15 +50,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 68%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+    z-index: 3;
     h1 {
       font-family: "Montserrat Bold";
-      font-size: 90px;
+      font-size: 80px;
       text-align: center;
       line-height: 0.9;
       letter-spacing: 1px;
@@ -59,14 +74,16 @@
       font-weight: 400;
     }
     h2 {
-      color: #DA3F5C;
+      color: #d83434;
       margin-bottom: 30px;
       font-family: "Montserrat Regular";
       font-weight: 600;
-      font-size: 17px;    
+      font-size: 19px;    
+      text-shadow: 2px 2px 8px #0F0023;
+      letter-spacing: 1.5px;
     }
     h2::after {
-      content: "</FRONT-END DEVELOPER>";
+      content: "<FRONT-END DEVELOPER/>";
       margin-bottom: 25px;
     }
     p {
@@ -74,31 +91,47 @@
       font-family: "Montserrat Light";
       font-size: 25px;
       color: #fff;
+      text-shadow: 2px 2px 8px #0F0023;
     }
   }
 
   .scroll-down {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-bottom: 0;
+    font-family: "Montserrat Regular";
+    font-weight: 400;
+    font-size: 17px;   
+    color: #fff;
+    text-shadow: 2px 2px 8px #0F0023;
+    z-index: 10;
+    text-decoration: none;
+    cursor: pointer;
+    p {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      max-width: 35px;
+      animation: infinite;
+      animation-duration: 2s;
+      animation-name: bounce;
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+      text-shadow: 2px 2px 8px #0F0023;
+    }
+  }
+  .scroll-img-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 0;
-    font-family: "Montserrat Regular";
-    font-weight: 600;
-    font-size: 17px;   
-    color: #fff;
-  img {
-    max-width: 35px;
-    animation: infinite;
-    animation-duration: 2s;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
+    width: 100%;
   }
 
   @keyframes bounce {
@@ -143,3 +176,144 @@
       z-index: 1;
   } 
   
+
+
+  // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+  .canvas-text {
+    h1 {
+      font-size: 43px;
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 17px;
+      width: 90%;
+    }
+  }
+  .scroll-down {
+    font-size: 13px;
+  }
+  .scroll-img-container {
+    margin-top: 13px;
+    img {
+      max-width: 22px;
+    }
+  }
+ }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .canvas-text {
+    h1 {
+      font-size: 37px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      width: 50%;
+    }
+  }
+  .scroll-down {
+    font-size: 13px;
+  }
+  .scroll-img-container {
+    margin-top: 13px;
+    img {
+      max-width: 22px;
+    }
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .canvas-text {
+    h1 {
+      font-size: 65px;
+    }
+    h2 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .scroll-down {
+    font-size: 15px;
+  }
+  .scroll-img-container {
+    margin-top: 15px;
+    img {
+      max-width: 27px;
+    }
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .canvas-text {
+    h1 {
+      font-size: 75px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  .scroll-down {
+    font-size: 16px;
+  }
+  .scroll-img-container {
+    margin-top: 15px;
+    img {
+      max-width: 30px;
+    }
+  }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1500px) { 
+    .canvas-text {
+      height: 64%;
+    }
+  }
+
+
+
+
+
+  @media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
+    .canvas-text {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 15px;
+        width: 90%;
+      }
+    }
+    .scroll-down {
+      font-size: 13px;
+    }
+    .scroll-img-container {
+      margin-top: 10px;
+      img {
+        max-width: 20px;
+      }
+    }
+   }
