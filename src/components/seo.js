@@ -85,7 +85,7 @@ SEO.defaultProps = {
   lang: `pl`,
   meta: [],
   keywords: ['strony internetowe', 'sklepy internetowe', 'front end developer', 'wrocław'],
-  description: ``,
+  description: `Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!`,
 }
 
 SEO.propTypes = {

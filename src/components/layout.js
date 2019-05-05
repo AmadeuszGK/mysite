@@ -8,18 +8,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 import Header from "./header"
-import About from "./about-skills"
+import About from "./about"
 import Portfolio from "./portfolio"
 import Offer from "./offer"
 import Skills from "./skills"
 import Contact from "./contact"
+import Footer from "./footer"
+import Menu from "./menu"
 import "./layout.css"
 import "../styles/main.scss"
 
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
+import "animate.css/animate.min.css";
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
@@ -52,86 +54,23 @@ const Layout = ({ children }) => (
       </Helmet>
 
       <div className="website-content"> 
-      <nav className="side-menu">
 
-      <div className="menu-button">
-        <div id="nav-icon3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        </div>
+        <Menu/>
 
-        <ul>
-          <li>
-            <Link className="navButton" to="/#section-about-me">O mnie</Link>
-          </li>
-          <li>
-            <Link className="navButton" to="/#section-offer">Oferta</Link>
-          </li>
-          <li>
-            <Link className="navButton" to="/#section-portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link className="navButton" to="/#section-skills">Umiejętności</Link>
-          </li>
-          <li>
-            <Link className="navButton" to="/#section-contact">Kontakt</Link>
-          </li>
+        <div className="main-content">
+          <div className="main-content-button"></div>
 
-         <div className="side-menu-bottom">
-            <div className="side-menu-social">
-               <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160"> <img src="../../../linkedin-brands-white.png" alt="linked"></img></a> 
-               <a href="https://www.facebook.com/grzesiak.amadeusz"><img src="../../../facebook-square-brands-white.png" alt="facebook"></img></a> 
-            </div>
-            <div className="side-menu-contact">
-               <a href="tel:796536228"> <img src="../../../phone-solid-white.png" alt="phone"></img>+48 796 536 228</a> 
-            </div>
-            <div className="side-menu-contact">
-               <a href="mailto:grzesiak.amadeusz@gmail.com"><img src="../../../envelope-regular-white.png" alt="email"></img>grzesiak.amadeusz@gmail.com</a>
-            </div>
-         </div>
-    
+          <Header siteTitle={data.site.siteMetadata.title} />
+          
+          <main>{children}
+            <About/>
+            <Offer />
+            <Portfolio />
+            <Skills />
+            <Contact />
+          </main>
 
-        </ul>
-      </nav>
-
-      <div className="main-content">
-      <div className="main-content-button"></div>
-
-        <Header siteTitle={data.site.siteMetadata.title} />
-       
-        <main>{children}
-          <About/>
-          <Offer />
-          <Portfolio />
-          <Skills />
-          <Contact />
-        </main>
-
-        <footer>
-          <p>© {new Date().getFullYear()} Amadeusz Grzesiak. All rights reserved</p>
-
-        <ul>
-          <li>
-            <Link className="footer-menu-item" to="/#section-about-me">O mnie</Link>
-          </li>
-          <li>
-            <Link className="footer-menu-item" to="/#section-offer">Oferta</Link>
-          </li>
-          <li>
-            <Link className="footer-menu-item" to="/#section-portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link className="footer-menu-item" to="/#section-skills">Umiejętności</Link>
-          </li>
-          <li>
-            <Link className="footer-menu-item" to="/#section-contact">Kontakt</Link>
-          </li>
-        </ul>
-
-        </footer>
+          <Footer/>
 
         </div>
       </div>

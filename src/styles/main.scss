@@ -14,7 +14,12 @@ body {
 @import "./contact.scss";
 @import "./footer.scss";
 
-
+.website-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .main-content {
     position: relative;
@@ -24,6 +29,10 @@ body {
     width: 100%; 
     overflow: hidden;
     max-width: 2560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {

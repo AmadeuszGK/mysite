@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     padding-top: 70px;
     height: 100vh;
+    width: 100%;
 }
 .about-me {
     display: flex;
@@ -29,7 +30,7 @@
         font-family: "Montserrat Light";
         font-size: 32px;
         line-height: 1.25;
-        max-width: 48%;
+        max-width: 60%;
         margin-bottom: 60px;
         color: #000;
     }
@@ -106,7 +107,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
 }
 
 .about-me-box {
@@ -115,7 +115,7 @@
     bottom: -70px;
     width: 80%;
     height: calc(9.09722vw + 12rem);
-    background-color: rgb(27, 27, 27);
+    background-color: #131313;
     z-index: 0;
     box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
 }
@@ -413,17 +413,18 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1500.98px) { 
     .about-me-header {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .about-me-text {
         h1 {
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             max-width: 70%;
+            font-size: 37px;
         }
         p {
-            font-size: 30px;
-            margin-bottom: 50px;
-            max-width: 67%;
+            font-size: 28px;
+            margin-bottom: 40px;
+            max-width: 90%;
         }
     }
     .typing-box {

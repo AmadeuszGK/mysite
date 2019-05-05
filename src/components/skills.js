@@ -1,26 +1,27 @@
 import PropTypes from "prop-types"
 import React from "react"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Skills = ({ siteTitle }) => (
   <section className="section-skills" id="section-skills">
 
 <div className="skills-box">
 
-  <div className="skills-top-square"></div>
-  <div className="skills-bottom-square"></div>
+  <ScrollAnimation className="skills-top-square" animateIn="slideInLeft" delay={700}  animateOnce={true}></ScrollAnimation>
+  <ScrollAnimation className="skills-bottom-square" animateIn="slideInRight" delay={700}  animateOnce={true}></ScrollAnimation>
 
   <div className="skills-desc">
     <div className="skills-header">
       <div className="flat-line"></div>
-      <p>UMIEJĘTNOŚCI I TECHNOLOGIE</p>
+      <p className="flat-line-text">UMIEJĘTNOŚCI I TECHNOLOGIE</p>
     </div>
 
     <h2>Najnowsze<br />technologie</h2>
-    <p>Moje projekty tworzone są w oparciu o najnowsze technologie webowe. Stale rozwijam wachlarz umiejętności poprzez nowe wyzwania w pracy, jak i doszkalając się w domu.</p>
+    <p>Moje projekty tworzone są w oparciu o najnowsze technologie webowe. Stale rozwijam wachlarz umiejętności poprzez nowe wyzwania, kursy oraz niezaspokojoną ciekawość.</p>
   </div>
 
   <div className="skills">
-    <div className="all-skills">
+    <ScrollAnimation className="all-skills" animateIn="fadeIn" delay={300}  animateOnce={true}>
         <div className="skill-container">
           <img className="skill-image" src="../../../javascript.png" alt="javascript"></img>
           <p className="skill-text">javascript</p>
@@ -69,7 +70,7 @@ const Skills = ({ siteTitle }) => (
         <img className="skill-image" src="../../../figma.png" alt="figma"></img>
         <p className="skill-text">figma</p>
         </div> 
-      </div>
+      </ScrollAnimation>
     </div>
     </div>
   </section>

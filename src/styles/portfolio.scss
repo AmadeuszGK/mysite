@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    padding-bottom: 70px;
 }
 
 .portfolio-container {
@@ -24,7 +25,7 @@
     padding-left: 120px;
     padding-top: 70px;
     padding-right: 100px;
-    padding-bottom:120px;
+    padding-bottom:70px;
     z-index: 4;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     position: relative;
@@ -97,19 +98,19 @@
 }
 
 .portfolio-item {
-    width: 33%;
+    width: 30%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
     img {
-        height: 80px;
-        width: auto;
+        width: 100%;
+        height: auto;
         cursor: pointer;
         transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     }
@@ -124,8 +125,12 @@
     width: 40%;
     z-index: 6;
     right: 0;
-    top: 100px;
+    top: 150px;
     background-color: #333;
+    background-image: url('/chiara-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 30.57143rem;
     box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
     padding: 70px;
@@ -135,6 +140,7 @@
         font-size: 26px;
         margin-bottom: 25px;
         color: #fff;
+        text-shadow: 2px 2px 8px #0F0023;
     }
     p {
         font-size: 22px;
@@ -143,6 +149,7 @@
         color: #ffffff;
         margin-bottom: 40px;
         width: 80%;
+        text-shadow: 2px 2px 8px #0F0023;
     }
     a {
         font-family: "Montserrat Regular";
@@ -159,22 +166,66 @@
         background-color: #d83434;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         letter-spacing: 1px;
+        transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        display: block;
+        width: 200px;
+    }
+    a:hover {
+        transform: translateX(15px);
+        background-color: #ff3535;
     }
 }
+
 
 .portfolio-items-mobile {
     display: none;
 }
 
+.portfolio-text-mobile {
+    display: none;
+}
 
+.portfolio-item-link {
+    text-transform: uppercase;
+}
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-    .portfolio-bigimage {
+    .section-portfolio {
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .portfolio-bigimage, .portfolio-items, .portfolio-text-desktop {
         display: none;
     } 
-    .portfolio-items-mobile {
-        display: block;
+    .portfolio-items-mobile, .portfolio-text-mobile {
+        display: flex;
+    }
+    .portfolio-container {
+        width: 100%;
+        position: relative;
+    }
+    .portfolio-item {
+        width: 50%;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    .portfolio-container-content {
+        padding: 35px;
+        padding-top: 50px;
+    }
+    .portfolio-about {
+        p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+    }
+    .portfolio-header {
+        p {
+            margin: 0;
+        }
     }
  }
 
@@ -183,11 +234,12 @@
     .section-portfolio {
         height: auto;
         padding-top: 70px;
+        padding-bottom: 70px;
     }
-    .portfolio-bigimage, .portfolio-items {
+    .portfolio-bigimage, .portfolio-items, .portfolio-text-desktop {
         display: none;
     } 
-    .portfolio-items-mobile {
+    .portfolio-items-mobile, .portfolio-text-mobile {
         display: flex;
     }
     .portfolio-container {
@@ -199,6 +251,7 @@
     }
     .portfolio-container-content {
         padding: 35px;
+        padding-top: 70px;
     }
  }
 
@@ -206,10 +259,12 @@
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .portfolio-container-content {
         padding: 70px;
+        padding-top: 50px;
     }
     .portfolio-item {
-        padding: 20px;
         padding-left: 0;
+        padding-bottom: 0px;
+        padding-right: 50px;
     }
     .portfolio-container {
         width: calc(100% - 120px);
@@ -218,7 +273,7 @@
     .portfolio-bigimage {
         width: 70%;
         right: 0px;
-        bottom: 5%;
+        bottom: 2%;
         top: auto;
         height: 40%;
     }
@@ -228,6 +283,7 @@
         }
         p {
             font-size: 19px;
+            margin-bottom: 10px;
         }
     }
     .portfolio-bigimage {
@@ -246,7 +302,7 @@
     .portfolio-bigimage {
         width: 70%;
         right: 0px;
-        bottom: 20%;
+        bottom: 17%;
         top: auto;
         height: 35%;
     }

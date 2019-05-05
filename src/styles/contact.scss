@@ -14,15 +14,17 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .contact-details {
     width: 40%;
-    padding: 70px;
+    padding-left: 50px;
+    padding-right: 70px;
     z-index: 3;
-    background-color: #fff;
+    position: relative;
     p {
-        color: rgb(168, 168, 168);
+        color: #4a4a4a;
         font-size: 14px;
         font-family: "Montserrat Regular";
         line-height: 1.25;
@@ -33,6 +35,7 @@
         margin-bottom: 40px;
     }
 }
+
 
 .contact-header {
     display: flex;
@@ -78,7 +81,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         margin: 0px;
-        color: #000;
+        color: #131313;
         text-decoration: none;
         white-space: nowrap;
     }
@@ -99,8 +102,8 @@
     justify-content: center;
     align-items: center;
     padding: 35px;
-    height: 30.57143rem;
-    input {
+    height: 28.57143rem;
+    input, textarea {
         width: 100%;
         color: #4a4a4a;
         font-size: 14px;
@@ -138,8 +141,154 @@
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.send-button:hover {
+transform: translateX(15px);
+background-color: #ff3535;
 }
 
 .send-button:focus {
     outline: none;
 } 
+
+.contact-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+       width: 50%;
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       margin: 0;
+    }
+}
+
+
+.contact-bg-number {
+    position: absolute;
+    font-family: "Montserrat Bold";
+    font-weight: 800;
+    right: -200px;
+    top: -50px;
+    font-size: 350px;
+    color: #F5F5F5;
+    z-index: -2;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-contact {
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contact-box {
+        justify-content: flex-start;
+    }
+    .contact-image {
+        display: none;
+    }
+    .contact-details {
+        padding-right: 0;
+        padding-left: 0;
+        width: 80%;
+    }
+    .contact-social-item {
+        a {
+            font-size: 12px;
+        }
+        img {
+            max-width: 28px;
+        }
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .section-contact {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 70px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contact-box {
+        justify-content: flex-start;
+    }
+    .contact-image {
+      display: none;
+    }
+    .contact-details {
+        padding-right: 0;
+        padding-left: 0;
+        width: 50%;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .section-contact {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 120px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .contact-image {
+        img {
+           width: 60%;
+           position: absolute;
+           bottom: 0;
+           right: 0px;
+           margin: 0;
+        }
+    }
+    .contact-details {
+        padding-right: 0;
+        padding-left: 0;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1300.98px) { 
+    .section-contact {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 120px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .contact-image {
+        img {
+           width: 60%;
+           position: absolute;
+           bottom: 0;
+           right: 0px;
+           margin: 0;
+        }
+    }
+    .contact-details {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contact-bg-number {
+        right: -200px;
+        top: -50px;
+        font-size: 330px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1560.98px){ 
+    .contact-bg-number {
+        right: -200px;
+        top: -50px;
+        font-size: 330px;
+    }
+ }

@@ -819,6 +819,10 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "animate.css",
+            "version": "^3.7.0"
+          },
+          {
             "name": "gatsby",
             "version": "^2.3.15"
           },
@@ -871,12 +875,20 @@
             "version": "^16.8.6"
           },
           {
+            "name": "react-animate-on-scroll",
+            "version": "^2.1.5"
+          },
+          {
             "name": "react-dom",
             "version": "^16.8.6"
           },
           {
             "name": "react-helmet",
             "version": "^5.2.0"
+          },
+          {
+            "name": "react-transition-group",
+            "version": "^4.0.0"
           },
           {
             "name": "smooth-scroll",
@@ -1018,12 +1030,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-30T17:49:53.941Z",
+      "buildTime": "2019-05-02T16:44:02.244Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "9bd1d0c7fdc9d689d6f0d595cd4ca44f",
+        "contentDigest": "ddda179cd5333e9f82215e6a5ca5b8f3",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1033,7 +1045,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "b65b9b0a2deb3f9cf38e43e8a8569b32",
+        "contentDigest": "d4b8404567f4dea7aa922f591505a743",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1044,10 +1056,10 @@
       "extension": "",
       "size": 128,
       "prettySize": "128 B",
-      "modifiedTime": "2019-04-30T17:48:03.113Z",
-      "accessTime": "2019-04-30T17:49:58.613Z",
-      "changeTime": "2019-04-30T17:48:03.113Z",
-      "birthTime": "2019-04-30T17:48:03.102Z",
+      "modifiedTime": "2019-05-02T16:42:18.975Z",
+      "accessTime": "2019-05-02T16:44:05.645Z",
+      "changeTime": "2019-05-02T16:42:18.975Z",
+      "birthTime": "2019-05-02T16:42:18.966Z",
       "root": "/",
       "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src",
       "base": "images",
@@ -1061,73 +1073,16 @@
       "gid": 0,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3748540,
+      "ino": 3946679,
       "blocks": 0,
-      "atimeMs": 1556646598612.6904,
-      "mtimeMs": 1556646483113.1575,
-      "ctimeMs": 1556646483113.1575,
-      "birthtimeMs": 1556646483101.82,
-      "atime": "2019-04-30T17:49:58.613Z",
-      "mtime": "2019-04-30T17:48:03.113Z",
-      "ctime": "2019-04-30T17:48:03.113Z",
-      "birthtime": "2019-04-30T17:48:03.102Z"
-    },
-    "ded76ca9-78d3-54d2-986e-5a5691150280": {
-      "id": "ded76ca9-78d3-54d2-986e-5a5691150280",
-      "children": [
-        "99eaa177-6a5f-5cab-ac17-a20d1f7048fc"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
-        "type": "File",
-        "mediaType": "image/png",
-        "description": "File \"src/images/gatsby-astronaut.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "images",
-      "absolutePath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images/gatsby-astronaut.png",
-      "relativePath": "gatsby-astronaut.png",
-      "extension": "png",
-      "size": 167273,
-      "prettySize": "167 kB",
-      "modifiedTime": "2019-04-28T11:28:13.000Z",
-      "accessTime": "2019-04-30T17:49:47.397Z",
-      "changeTime": "2019-04-30T17:48:03.110Z",
-      "birthTime": "2019-04-30T17:48:03.110Z",
-      "root": "/",
-      "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
-      "base": "gatsby-astronaut.png",
-      "ext": ".png",
-      "name": "gatsby-astronaut",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 33248,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 0,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 3748541,
-      "blocks": 328,
-      "atimeMs": 1556646587397.088,
-      "mtimeMs": 1556450893000,
-      "ctimeMs": 1556646483110.2468,
-      "birthtimeMs": 1556646483110.051,
-      "atime": "2019-04-30T17:49:47.397Z",
-      "mtime": "2019-04-28T11:28:13.000Z",
-      "ctime": "2019-04-30T17:48:03.110Z",
-      "birthtime": "2019-04-30T17:48:03.110Z"
-    },
-    "99eaa177-6a5f-5cab-ac17-a20d1f7048fc": {
-      "id": "99eaa177-6a5f-5cab-ac17-a20d1f7048fc",
-      "children": [],
-      "parent": "ded76ca9-78d3-54d2-986e-5a5691150280",
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
+      "atimeMs": 1556815445644.5234,
+      "mtimeMs": 1556815338974.807,
+      "ctimeMs": 1556815338974.807,
+      "birthtimeMs": 1556815338965.7087,
+      "atime": "2019-05-02T16:44:05.645Z",
+      "mtime": "2019-05-02T16:42:18.975Z",
+      "ctime": "2019-05-02T16:42:18.975Z",
+      "birthtime": "2019-05-02T16:42:18.966Z"
     },
     "c15b60dc-3a37-55a4-9624-fc1a4f694b02": {
       "id": "c15b60dc-3a37-55a4-9624-fc1a4f694b02",
@@ -1149,9 +1104,9 @@
       "size": 67424,
       "prettySize": "67.4 kB",
       "modifiedTime": "2019-04-30T06:07:49.000Z",
-      "accessTime": "2019-04-30T17:48:13.964Z",
-      "changeTime": "2019-04-30T17:48:03.118Z",
-      "birthTime": "2019-04-30T17:48:03.118Z",
+      "accessTime": "2019-05-02T16:42:20.732Z",
+      "changeTime": "2019-05-02T16:42:18.981Z",
+      "birthTime": "2019-05-02T16:42:18.981Z",
       "root": "/",
       "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
       "base": "gatsby-icon.png",
@@ -1165,16 +1120,63 @@
       "gid": 0,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3748542,
+      "ino": 3946681,
       "blocks": 136,
-      "atimeMs": 1556646493964.1084,
+      "atimeMs": 1556815340732.2886,
       "mtimeMs": 1556604469000,
-      "ctimeMs": 1556646483117.9978,
-      "birthtimeMs": 1556646483117.863,
-      "atime": "2019-04-30T17:48:13.964Z",
+      "ctimeMs": 1556815338981.475,
+      "birthtimeMs": 1556815338981.258,
+      "atime": "2019-05-02T16:42:20.732Z",
       "mtime": "2019-04-30T06:07:49.000Z",
-      "ctime": "2019-04-30T17:48:03.118Z",
-      "birthtime": "2019-04-30T17:48:03.118Z"
+      "ctime": "2019-05-02T16:42:18.981Z",
+      "birthtime": "2019-05-02T16:42:18.981Z"
+    },
+    "ded76ca9-78d3-54d2-986e-5a5691150280": {
+      "id": "ded76ca9-78d3-54d2-986e-5a5691150280",
+      "children": [
+        "99eaa177-6a5f-5cab-ac17-a20d1f7048fc"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"src/images/gatsby-astronaut.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images/gatsby-astronaut.png",
+      "relativePath": "gatsby-astronaut.png",
+      "extension": "png",
+      "size": 167273,
+      "prettySize": "167 kB",
+      "modifiedTime": "2019-04-28T11:28:13.000Z",
+      "accessTime": "2019-05-02T16:42:20.726Z",
+      "changeTime": "2019-05-02T16:42:18.975Z",
+      "birthTime": "2019-05-02T16:42:18.975Z",
+      "root": "/",
+      "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
+      "base": "gatsby-astronaut.png",
+      "ext": ".png",
+      "name": "gatsby-astronaut",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33248,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 0,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 3946680,
+      "blocks": 328,
+      "atimeMs": 1556815340725.897,
+      "mtimeMs": 1556450893000,
+      "ctimeMs": 1556815338974.6619,
+      "birthtimeMs": 1556815338974.511,
+      "atime": "2019-05-02T16:42:20.726Z",
+      "mtime": "2019-04-28T11:28:13.000Z",
+      "ctime": "2019-05-02T16:42:18.975Z",
+      "birthtime": "2019-05-02T16:42:18.975Z"
     },
     "d28e549e-1633-5efb-9cca-b2afed0ebc8a": {
       "id": "d28e549e-1633-5efb-9cca-b2afed0ebc8a",
@@ -1182,6 +1184,16 @@
       "parent": "c15b60dc-3a37-55a4-9624-fc1a4f694b02",
       "internal": {
         "contentDigest": "ff59d30e35f0a159d67259fa5a41a3e5",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "99eaa177-6a5f-5cab-ac17-a20d1f7048fc": {
+      "id": "99eaa177-6a5f-5cab-ac17-a20d1f7048fc",
+      "children": [],
+      "parent": "ded76ca9-78d3-54d2-986e-5a5691150280",
+      "internal": {
+        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
       }
@@ -1252,7 +1264,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "e8734055ba173b2c4ba7947fdcddcd1b"
+    "PLUGINS_HASH": "b7ea448fbdf74086e40bcac196024846"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1286,7 +1298,7 @@
       "pages": [
         "/dev-404-page/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
@@ -1295,7 +1307,7 @@
         "/404/",
         "/404.html"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
@@ -1303,7 +1315,7 @@
       "pages": [
         "/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     }
   },
   "staticQueryComponents": {
