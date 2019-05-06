@@ -2,18 +2,21 @@ footer {
     position: relative;
     z-index: 1;
     width: 100%;
+
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
     }
+
     li {
         list-style-type: none;
         margin: 0;
         z-index: 4;
         letter-spacing: 1px;
     }
+
     p {
         font-family: "Montserrat Regular";
         font-weight: 400;
@@ -26,6 +29,7 @@ footer {
         z-index: 4;
         letter-spacing: 1px;
     }
+
     .skills-bottom-square {
         height: 210px;
         left: 0;
@@ -39,6 +43,7 @@ footer {
         padding-bottom: 15px;
         padding-top: 15px;
         z-index: 10;
+
         p {
             transform: rotate(-90deg);
             display: block;
@@ -74,9 +79,14 @@ footer {
 }
 
 @keyframes slide-up {
-    0%   {transform: translateY(100px);}
-    100% {transform: translateY(-100px);}
-  }
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
 
 .footer-box {
     overflow: hidden;
@@ -85,7 +95,7 @@ footer {
 
 .footer-content {
     background-image: url('/footer-image.jpg');
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,13 +137,14 @@ footer {
     list-style-type: none;
     transition: color 0.2s ease-in-out;
 }
+
 .footer-menu-item:hover {
     color: rgb(180, 180, 180);
 }
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     footer {
         .skills-bottom-square {
             top: -230px;
@@ -141,22 +152,25 @@ footer {
             left: auto;
             width: 50px;
         }
+
         ul {
             display: none;
         }
+
         p {
             width: 100%;
             text-align: center;
             font-size: 9px;
         }
     }
-            .footer-content {
-                padding: 35px;
-            }
- }
+
+    .footer-content {
+        padding: 35px;
+    }
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
     footer {
         .skills-bottom-square {
             top: -280px;
@@ -164,23 +178,26 @@ footer {
             left: auto;
             width: 50px;
         }
+
         ul {
             display: none;
         }
+
         p {
             width: 100%;
             text-align: center;
             font-size: 12px;
         }
     }
+
     .footer-content {
         padding-left: 35px;
         padding-right: 35px;
     }
- }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
     footer {
         .skills-bottom-square {
             top: -280px;
@@ -188,43 +205,48 @@ footer {
             left: auto;
             width: 50px;
         }
+
         ul {
             display: none;
         }
+
         p {
             width: 100%;
             text-align: center;
         }
     }
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .footer-content {
         padding-left: 70px;
         padding-right: 70px;
     }
+
     footer {
         .skills-bottom-square {
             top: -300px;
             width: 50px;
         }
+
         ul {
             display: none;
         }
+
         p {
             width: 100%;
             text-align: center;
         }
     }
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1570.98px) { 
+@media (min-width: 1200px) and (max-width: 1570.98px) {
     footer {
         .skills-bottom-square {
             top: -350px;
             width: 50px;
         }
     }
- }
+}

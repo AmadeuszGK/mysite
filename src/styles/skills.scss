@@ -17,7 +17,7 @@
     width: 70%;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 0 6px 19px 0 rgba(0,0,0,.11);
+    box-shadow: 0 6px 19px 0 rgba(0, 0, 0, .11);
     height: 33.57143rem;
 }
 
@@ -49,6 +49,7 @@
     padding: 70px;
     z-index: 3;
     background-color: #fff;
+
     p {
         font-size: 22px;
         font-family: "Montserrat Regular";
@@ -56,6 +57,7 @@
         line-height: 1.25;
         color: #4a4a4a;
     }
+
     h2 {
         margin-bottom: 40px;
     }
@@ -66,6 +68,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 40px;
+
     p {
         font-family: "Montserrat Regular";
         font-weight: 600;
@@ -74,15 +77,16 @@
         margin: 0;
         color: hsla(0, 0%, 0%, 0.8);
     }
+
     .flat-line {
         background-color: rgb(216, 52, 52);
     }
-} 
+}
 
 .skills {
     width: 60%;
     background-image: url('/mac-details.jpg');
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,16 +110,16 @@
 }
 
 .all-skills:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	filter: blur(3px);
-	margin: -20px;
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(3px);
+    margin: -20px;
 }
 
 .skill-container {
@@ -165,52 +169,62 @@
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .section-skills {
         height: auto;
         padding: 0;
         margin: 0;
     }
+
     .skills-desc {
         padding: 35px;
         padding-top: 0;
         width: 100%;
+
         p {
             font-size: 19px;
             margin: 0;
         }
     }
+
     .skills {
         width: 100%;
     }
+
     .all-skills {
         padding: 30px;
         width: 100%;
     }
+
     .skill-text {
         font-size: 11px;
     }
+
     .skill-image {
         width: 50px;
     }
+
     .skills-box {
         height: auto;
         margin: 0;
         box-shadow: none;
         width: 100%;
     }
-    .skills-top-square, .skills-bottom-square {
+
+    .skills-top-square,
+    .skills-bottom-square {
         display: none;
     }
+
     .skill-container {
         padding-top: 10px;
         padding-bottom: 10px;
         flex: 1 0 33%;
     }
- }
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
     .section-skills {
         height: auto;
         padding-bottom: 120px;
@@ -218,48 +232,58 @@
         padding-left: 0px;
         padding-top: 0px;
     }
+
     .skills-desc {
         padding: 35px;
         width: 100%;
+
         p {
             font-size: 19px;
             margin: 0;
         }
     }
+
     .skills {
         width: 100%;
     }
+
     .all-skills {
         padding: 35px;
         width: 100%;
     }
+
     .skill-text {
         font-size: 11px;
     }
+
     .skill-image {
         width: 50px;
     }
+
     .skills-box {
         height: auto;
         margin: 0;
         box-shadow: none;
         width: 100%;
     }
+
     .skills-top-square {
         display: none;
     }
+
     .skills-bottom-square {
         width: 30%;
         right: 0px;
     }
+
     .skill-container {
         padding-top: 10px;
         padding-bottom: 10px;
     }
- }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
     .section-skills {
         height: auto;
         padding-bottom: 120px;
@@ -267,39 +291,47 @@
         padding-left: 0px;
         padding-top: 150px;
     }
+
     .skills-desc {
         padding: 50px;
+
         p {
             font-size: 19px;
             margin: 0;
         }
     }
+
     .all-skills {
         padding: 40px;
     }
+
     .skill-text {
         font-size: 11px;
     }
+
     .skill-image {
         width: 50px;
     }
+
     .skills-box {
         height: auto;
         margin: 0;
         width: 100%;
     }
+
     .skills-top-square {
         width: 30%;
         left: 0px;
     }
+
     .skills-bottom-square {
         width: 30%;
         right: 0px;
     }
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .section-skills {
         height: auto;
         padding-bottom: 120px;
@@ -308,34 +340,41 @@
         padding-top: 70px;
         margin: 0;
     }
+
     .skills-desc {
         padding: 50px;
+
         p {
             font-size: 20px;
             margin: 0;
         }
     }
+
     .all-skills {
         padding: 50px;
     }
+
     .skill-text {
         font-size: 11px;
     }
+
     .skill-image {
         width: 50px;
     }
+
     .skills-box {
         height: auto;
         width: 100%;
     }
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1600.98px) { 
+@media (min-width: 1200px) and (max-width: 1600.98px) {
     .section-skills {
         margin-bottom: 70px;
     }
+
     .skills-box {
         width: 100%;
     }
- }
+}
