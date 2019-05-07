@@ -53,13 +53,19 @@ var wordflick = function() {
   }, speed);
 };
 
-$(document).ready(function() {
-  wordflick();
-});
+// $(document).ready(function() {
+//   wordflick();
+// });
 ////////////// JQUERY TYPING END ////////////////////
 
-const About = ({ siteTitle }) => (
-  <section className="section-about-me" id="section-about-me">
+class About extends React.Component {
+
+  componentDidMount() {
+    wordflick()
+  }
+
+  render () {
+    return (  <section className="section-about-me" id="section-about-me">
     <div className="about-me">
       <ScrollAnimation
         className="about-me-text"
@@ -103,8 +109,10 @@ const About = ({ siteTitle }) => (
         />
       </div>
     </div>
-  </section>
-);
+  </section>)
+  }
+
+};
 
 About.propTypes = {
   siteTitle: PropTypes.string
