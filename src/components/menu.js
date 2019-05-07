@@ -42,11 +42,11 @@ const Menu = ({ siteTitle }) => (
 
       <div className="side-menu-bottom">
         <div className="side-menu-social">
-          <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160">
+          <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160" target="_blank" rel="noopener noreferrer">
             {" "}
             <img src="../../../linkedin-brands-white.png" alt="linked" />
           </a>
-          <a href="https://www.facebook.com/grzesiak.amadeusz">
+          <a href="https://www.facebook.com/grzesiak.amadeusz" target="_blank" rel="noopener noreferrer">
             <img
               src="../../../facebook-square-brands-white.png"
               alt="facebook"
@@ -61,7 +61,7 @@ const Menu = ({ siteTitle }) => (
           </a>
         </div>
         <div className="side-menu-contact">
-          <a href="mailto:grzesiak.amadeusz@gmail.com">
+          <a href="mailto:grzesiak.amadeusz@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="../../../envelope-regular-white.png" alt="email" />
             grzesiak.amadeusz@gmail.com
           </a>

@@ -170,7 +170,7 @@
     align-items: flex-end;
 
     img {
-        width: 50%;
+        width: 38%;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -261,6 +261,8 @@
     }
 
     .contact-image {
+        display: none;
+
         img {
             width: 60%;
             position: absolute;
@@ -268,6 +270,11 @@
             right: 0px;
             margin: 0;
         }
+    }
+
+
+    .contact-box {
+        justify-content: flex-start;
     }
 
     .contact-details {
@@ -314,5 +321,15 @@
         right: -200px;
         top: -50px;
         font-size: 330px;
+    }
+
+    .contact-image {
+        img {
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            margin: 0;
+        }
     }
 }

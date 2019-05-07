@@ -44,10 +44,6 @@ const Layout = ({ children }) => (
         <Helmet>
           <script src={withPrefix("delaunay.js")} type="text/javascript" />
           <script src={withPrefix("require.js")} type="text/javascript" />
-          {/* <script
-            src="http://requirejs.org/docs/release/2.1.15/minified/require.js"
-            type="text/javascript"
-          /> */}
           <script src={withPrefix("canvas.js")} type="text/javascript" />
           <script src={withPrefix("menu-toggle.js")} type="text/javascript" />
           <script src={withPrefix("typed.js")} type="text/javascript" />

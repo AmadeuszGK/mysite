@@ -1,4 +1,3 @@
-const header = document.querySelector("header");
 const websiteContent = document.querySelector(".website-content");
 const menuButton = document.querySelector(".menu-button");
 const mainContentButton = document.querySelector(".main-content-button");

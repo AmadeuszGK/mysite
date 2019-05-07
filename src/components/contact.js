@@ -26,7 +26,7 @@ const Contact = ({ siteTitle }) => (
 
         <p>
           Możesz mnie znaleźć w paru miejscach w sieci, ale jeśli wolisz zrobić
-          to "po staremu" po prostu wyślij maila.
+          to "po staremu" po prostu wyślij maila lub zadzwoń.
         </p>
 
         <div className="contact-social">
@@ -39,13 +39,15 @@ const Contact = ({ siteTitle }) => (
           <div className="contact-social-item">
             <a href="tel:796536228">
               {" "}
-              <img src="../../../phone-solid.png" alt="phone" />+48 796 536 228
+              <img src="../../../phone-solid.png" alt="phone" />
+              +48 796 536 228
             </a>
           </div>
           <div className="contact-social-item">
             <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160">
               {" "}
-              <img src="../../../linkedin-brands.png" alt="linked" />linkedin
+              <img src="../../../linkedin-brands.png" alt="linked" />
+              linkedin
             </a>
           </div>
           <div className="contact-social-item">

@@ -800,7 +800,7 @@
       "resolve": "/Projekty/amadeuszgrzesiak/strona/agrzesiak",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "cbfd63072db60f467b90b489ec70f484",
+      "version": "fed375480e259e877bf719efdc6572bd",
       "pluginOptions": {
         "plugins": []
       },
@@ -912,7 +912,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "9f6e65980bc1759d4d5d7b99f0f7e51a",
+        "contentDigest": "7dc11245dd151f78c2be47e6ac63acea",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1022,20 +1022,20 @@
     },
     "Site": {
       "siteMetadata": {
-        "title": "Gatsby Default Starter",
-        "description": "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
-        "author": "@gatsbyjs"
+        "title": "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe ",
+        "description": "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!",
+        "author": "Amadeusz Grzesiak"
       },
       "port": 8000,
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-05-06T14:49:57.970Z",
+      "buildTime": "2019-05-07T16:51:48.772Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "2fe12f9902eaeaf4b1928a4114cf7596",
+        "contentDigest": "0cbfdafe3dc7fd9a02155bc36f882600",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1045,7 +1045,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "388dfdcb59cd0931c1967be53fd2d14c",
+        "contentDigest": "50697bc066974023000b4331fae7f01e",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1054,12 +1054,12 @@
       "absolutePath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
       "relativePath": "",
       "extension": "",
-      "size": 128,
-      "prettySize": "128 B",
-      "modifiedTime": "2019-05-06T14:49:31.443Z",
-      "accessTime": "2019-05-06T14:50:03.729Z",
-      "changeTime": "2019-05-06T14:49:31.443Z",
-      "birthTime": "2019-05-06T14:49:31.414Z",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2019-05-07T16:28:04.507Z",
+      "accessTime": "2019-05-07T16:51:55.247Z",
+      "changeTime": "2019-05-07T16:28:04.507Z",
+      "birthTime": "2019-05-07T16:28:04.506Z",
       "root": "/",
       "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src",
       "base": "images",
@@ -1068,21 +1068,21 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 4,
+      "nlink": 3,
       "uid": 501,
       "gid": 0,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 4111895,
+      "ino": 4145236,
       "blocks": 0,
-      "atimeMs": 1557154203728.895,
-      "mtimeMs": 1557154171443.4155,
-      "ctimeMs": 1557154171443.4155,
-      "birthtimeMs": 1557154171414.0276,
-      "atime": "2019-05-06T14:50:03.729Z",
-      "mtime": "2019-05-06T14:49:31.443Z",
-      "ctime": "2019-05-06T14:49:31.443Z",
-      "birthtime": "2019-05-06T14:49:31.414Z"
+      "atimeMs": 1557247915247.252,
+      "mtimeMs": 1557246484506.562,
+      "ctimeMs": 1557246484506.562,
+      "birthtimeMs": 1557246484506.4087,
+      "atime": "2019-05-07T16:51:55.247Z",
+      "mtime": "2019-05-07T16:28:04.507Z",
+      "ctime": "2019-05-07T16:28:04.507Z",
+      "birthtime": "2019-05-07T16:28:04.506Z"
     },
     "c15b60dc-3a37-55a4-9624-fc1a4f694b02": {
       "id": "c15b60dc-3a37-55a4-9624-fc1a4f694b02",
@@ -1103,10 +1103,10 @@
       "extension": "png",
       "size": 67424,
       "prettySize": "67.4 kB",
-      "modifiedTime": "2019-04-30T06:07:49.000Z",
-      "accessTime": "2019-05-02T16:42:20.732Z",
-      "changeTime": "2019-05-02T16:42:18.981Z",
-      "birthTime": "2019-05-02T16:42:18.981Z",
+      "modifiedTime": "2019-05-06T13:51:13.000Z",
+      "accessTime": "2019-05-07T16:28:05.652Z",
+      "changeTime": "2019-05-07T16:28:04.511Z",
+      "birthTime": "2019-05-07T16:28:04.511Z",
       "root": "/",
       "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
       "base": "gatsby-icon.png",
@@ -1120,63 +1120,16 @@
       "gid": 0,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 3946681,
+      "ino": 4145237,
       "blocks": 136,
-      "atimeMs": 1556815340732.2886,
-      "mtimeMs": 1556604469000,
-      "ctimeMs": 1556815338981.475,
-      "birthtimeMs": 1556815338981.258,
-      "atime": "2019-05-02T16:42:20.732Z",
-      "mtime": "2019-04-30T06:07:49.000Z",
-      "ctime": "2019-05-02T16:42:18.981Z",
-      "birthtime": "2019-05-02T16:42:18.981Z"
-    },
-    "ded76ca9-78d3-54d2-986e-5a5691150280": {
-      "id": "ded76ca9-78d3-54d2-986e-5a5691150280",
-      "children": [
-        "99eaa177-6a5f-5cab-ac17-a20d1f7048fc"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
-        "type": "File",
-        "mediaType": "image/png",
-        "description": "File \"src/images/gatsby-astronaut.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "images",
-      "absolutePath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images/gatsby-astronaut.png",
-      "relativePath": "gatsby-astronaut.png",
-      "extension": "png",
-      "size": 167273,
-      "prettySize": "167 kB",
-      "modifiedTime": "2019-04-28T11:28:13.000Z",
-      "accessTime": "2019-05-02T16:42:20.726Z",
-      "changeTime": "2019-05-02T16:42:18.975Z",
-      "birthTime": "2019-05-02T16:42:18.975Z",
-      "root": "/",
-      "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
-      "base": "gatsby-astronaut.png",
-      "ext": ".png",
-      "name": "gatsby-astronaut",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 33248,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 0,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 3946680,
-      "blocks": 328,
-      "atimeMs": 1556815340725.897,
-      "mtimeMs": 1556450893000,
-      "ctimeMs": 1556815338974.6619,
-      "birthtimeMs": 1556815338974.511,
-      "atime": "2019-05-02T16:42:20.726Z",
-      "mtime": "2019-04-28T11:28:13.000Z",
-      "ctime": "2019-05-02T16:42:18.975Z",
-      "birthtime": "2019-05-02T16:42:18.975Z"
+      "atimeMs": 1557246485651.571,
+      "mtimeMs": 1557150673000,
+      "ctimeMs": 1557246484511.1467,
+      "birthtimeMs": 1557246484511.012,
+      "atime": "2019-05-07T16:28:05.652Z",
+      "mtime": "2019-05-06T13:51:13.000Z",
+      "ctime": "2019-05-07T16:28:04.511Z",
+      "birthtime": "2019-05-07T16:28:04.511Z"
     },
     "d28e549e-1633-5efb-9cca-b2afed0ebc8a": {
       "id": "d28e549e-1633-5efb-9cca-b2afed0ebc8a",
@@ -1184,16 +1137,6 @@
       "parent": "c15b60dc-3a37-55a4-9624-fc1a4f694b02",
       "internal": {
         "contentDigest": "ff59d30e35f0a159d67259fa5a41a3e5",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "99eaa177-6a5f-5cab-ac17-a20d1f7048fc": {
-      "id": "99eaa177-6a5f-5cab-ac17-a20d1f7048fc",
-      "children": [],
-      "parent": "ded76ca9-78d3-54d2-986e-5a5691150280",
-      "internal": {
-        "contentDigest": "6d91c86c0fde632ba4cd01062fd9ccfa",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
       }
@@ -1264,19 +1207,13 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "b7ea448fbdf74086e40bcac196024846"
+    "PLUGINS_HASH": "e827189c79fd1ea13c0782d913d5afa4"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
         "sq--src-components-layout-js",
         "sq--src-components-seo-js"
-      ],
-      "ded76ca9-78d3-54d2-986e-5a5691150280": [
-        "sq--src-components-image-js"
-      ],
-      "99eaa177-6a5f-5cab-ac17-a20d1f7048fc": [
-        "sq--src-components-image-js"
       ]
     },
     "connections": {}
@@ -1298,7 +1235,7 @@
       "pages": [
         "/dev-404-page/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
@@ -1307,7 +1244,7 @@
         "/404/",
         "/404.html"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
@@ -1315,7 +1252,7 @@
       "pages": [
         "/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     }
   },
   "staticQueryComponents": {

@@ -31,8 +31,7 @@ const Skills = ({ siteTitle }) => (
         </h2>
         <p>
           Moje projekty tworzone są w oparciu o najnowsze technologie webowe.
-          Stale rozwijam wachlarz umiejętności poprzez nowe wyzwania, kursy oraz
-          niezaspokojoną ciekawość.
+          Stale rozwijam wachlarz umiejętności poprzez nowe wyzwania oraz kursy.
         </p>
       </div>
 
@@ -70,6 +69,14 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
+              src="../../../reactjs.png"
+              alt="react"
+            />
+            <p className="skill-text">react js</p>
+          </div>
+          <div className="skill-container">
+            <img
+              className="skill-image"
               src="../../../firebase.png"
               alt="firebase"
             />
@@ -78,10 +85,6 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img className="skill-image" src="../../../sass.png" alt="sass" />
             <p className="skill-text">sass</p>
-          </div>
-          <div className="skill-container">
-            <img className="skill-image" src="../../../less.png" alt="less" />
-            <p className="skill-text">less</p>
           </div>
           <div className="skill-container">
             <img className="skill-image" src="../../../es6.png" alt="es6" />

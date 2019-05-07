@@ -7,54 +7,78 @@ class Portfolio extends React.Component {
     super();
     this.state = {
       id: 0,
-      name: "Amadeusz Grzesiak",
+      name: "Promatic Games",
       desc:
-        "Moje portfolio, które stworzyłem w oparciu o GatsbyJS, które z kolei oparte jest o ReactJS. Kod strony możesz zobaczyć tutaj.",
-      link: "www.amadeuszgrzesiak.pl",
-      linkText: "amadeuszgrzesiak.pl",
-      bg: "url('agrzesiak-bg.jpg')"
+        "Największy projekt, który współtworzyłem wraz z innym programistą pracując w E-fun. Strona prezętuje gry firmy Promatic. Oparta jest o Angular 7 oraz Firebase.",
+      link: "https://promaticgames.com",
+      linkText: "promaticgames.com",
+      bg: "url('promaticgames-bg.jpg')"
     };
   }
 
   changeItem0() {
     this.setState({
-      id: 0,
-      name: "Amadeusz Grzesiak",
+      id: 5,
+      name: "Promatic Games",
       desc:
-        "Moje portfolio, które stworzyłem w oparciu o GatsbyJS, które z kolei oparte jest o ReactJS. Kod strony możesz zobaczyć tutaj.",
-      link: "www.amadeuszgrzesiak.pl",
-      linkText: "amadeuszgrzesiak.pl",
-      bg: "url('agrzesiak-bg.jpg')"
+        "Największy projekt, który współtworzyłem wraz z innym programistą pracując w E-fun. Strona prezętuje gry firmy Promatic. Oparta jest o Angular 7 oraz Firebase.",
+      link: "https://promaticgames.com",
+      linkText: "promaticgames.com",
+      bg: "url('promaticgames-bg.jpg')"
     });
   }
 
   changeItem1() {
     this.setState({
       id: 1,
-      name: "Chiara Shop",
+      name: "AmadeuszGrzesiak.com",
       desc:
-        "Sklep internetowy oparty o Wordpress oraz najpopularniejszą wtyczkę e-commerce - Woocommerce. Posiada panel do zarządzania sklepem do dyspozycji właścicielki.",
-      link: "https://chiarashop.pl/",
-      linkText: "chiarashop.pl",
-      bg: "url('chiara-bg.jpg')"
+        "Moje portfolio, które stworzyłem przy użyciu nowoczesnego generatora stron statycznych GatsbyJS, który oparty jest o ReactJS. Kod strony możesz zobaczyć tutaj.",
+      link: "https://github.com/AmadeuszGK/mysite",
+      linkText: "github",
+      bg: "url('agrzesiak-bg.jpg')"
     });
   }
 
   changeItem2() {
     this.setState({
       id: 2,
+      name: "Wolności 14",
+      desc:
+        "Strona stworzona na zlecenie developra. Posiada skrypt napisany w Vanilla JS dynamicznie prezentujący plany budynku oraz szczegółowe dane dotyczące pięter i pomieszczeń.",
+      link: "http://wolnosci14.pl/",
+      linkText: "wolnosci14.pl",
+      bg: "url('wolnosci14-bg.jpg')"
+    });
+  }
+
+  changeItem3() {
+    this.setState({
+      id: 3,
+      name: "Chiara Shop",
+      desc:
+        "Sklep internetowy oparty o Wordpress oraz najpopularniejszą wtyczkę e-commerce - Woocommerce. Posiada panel zarządzania sklepem do dyspozycji właścicielki.",
+      link: "https://chiarashop.pl/",
+      linkText: "chiarashop.pl",
+      bg: "url('chiara-bg.jpg')"
+    });
+  }
+
+  changeItem4() {
+    this.setState({
+      id: 4,
       name: "Inlei",
       desc:
-        "Sklep internetowy stworzony dla polskich dystrubutorów włoskiego Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem.",
+        "Sklep internetowy stworzony dla polskich dystrubutorów produktów włoskiej firmy Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem i wiele ciekawych rozwiązań przyśpieszających pracę.",
       link: "https://inlei.pl/",
       linkText: "inlei.pl",
       bg: "url('chiara-bg.jpg')"
     });
   }
 
-  changeItem3() {
+  changeItem5() {
     this.setState({
-      id: 4,
+      id: 5,
       name: "Goodside",
       desc:
         "Przykład typowej, nowoczesnej strony - wizytówki stworzonej dla warszawskiej agencji eventowej Goodside.",
@@ -63,28 +87,6 @@ class Portfolio extends React.Component {
       bg: "url('goodside-bg.jpg')"
     });
   }
-
-  // changeItem4() {
-  //   this.setState({
-  //     id: 0,
-  //     name: 'Amadeusz Grzesiak',
-  //     desc: 'Moje portfolio, które stworzyłem w oparciu o GatsbyJS, które z kolei oparte jest o ReactJS. Kod strony możesz zobaczyć tutaj.',
-  //     link: 'www.amadeuszgrzesiak.pl',
-  //     linkText: 'amadeuszgrzesiak.pl',
-  //     bg: "url('agrzesiak-bg.jpg')"
-  //   })
-  // }
-
-  // changeItem5() {
-  //   this.setState({
-  //     id: 0,
-  //     name: 'Amadeusz Grzesiak',
-  //     desc: 'Moje portfolio, które stworzyłem w oparciu o GatsbyJS, które z kolei oparte jest o ReactJS. Kod strony możesz zobaczyć tutaj.',
-  //     link: 'www.amadeuszgrzesiak.pl',
-  //     linkText: 'amadeuszgrzesiak.pl',
-  //     bg: "url('agrzesiak-bg.jpg')"
-  //   })
-  // }
 
   render() {
     return (
@@ -115,58 +117,84 @@ class Portfolio extends React.Component {
             <div className="portfolio-items">
               <div
                 className="portfolio-item"
-                id="portfolioItem1"
                 onClick={this.changeItem0.bind(this)}
               >
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <img
+                  src="../../../promaticgames-logo.png"
+                  alt="promatic games"
+                />
               </div>
               <div
                 className="portfolio-item"
-                id="portfolioItem2"
                 onClick={this.changeItem1.bind(this)}
+              >
+                <img
+                  src="../../../agrzesiak-logo.png"
+                  alt="amadeusz grzesiak"
+                />
+              </div>
+              <div
+                className="portfolio-item"
+                onClick={this.changeItem2.bind(this)}
+              >
+                <img src="../../../wolnosci14-logo.png" alt="wolności 14" />
+              </div>
+              <div
+                className="portfolio-item"
+                onClick={this.changeItem3.bind(this)}
               >
                 <img src="../../../chiarashop-logo.png" alt="chiarashop" />
               </div>
               <div
                 className="portfolio-item"
-                id="portfolioItem3"
-                onClick={this.changeItem2.bind(this)}
+                onClick={this.changeItem4.bind(this)}
               >
-                <img src="../../../palka-logo.png" alt="pałka gołębie" />
+                <img src="../../../inlei-logo.png" alt="inlei" />
               </div>
               <div
                 className="portfolio-item"
-                id="portfolioItem4"
-                onClick={this.changeItem3.bind(this)}
+                onClick={this.changeItem5.bind(this)}
               >
                 <img src="../../../goodside-logo.png" alt="goodside" />
-              </div>
-              <div className="portfolio-item" id="portfolioItem5">
-                <img src="../../../agrzesiak-logo.png" alt="agrzesiak" />
-              </div>
-              <div className="portfolio-item" id="portfolioItem6">
-                <img src="../../../inlei-logo.png" alt="inlei" />
               </div>
             </div>
 
             <div className="portfolio-items-mobile">
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="https://promaticgames.com" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="../../../promaticgames-logo.png"
+                    alt="promatic games"
+                  />
+                </a>
               </div>
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="https://github.com/AmadeuszGK/mysite" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="../../../agrzesiak-logo.png"
+                    alt="amadeusz grzesiak"
+                  />
+                </a>
               </div>
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="http://wolnosci14.pl/" target="_blank" rel="noopener noreferrer">
+                  <img src="../../../wolnosci14-logo.png" alt="wolności 14" />
+                </a>
               </div>
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="https://chiarashop.pl/" target="_blank" rel="noopener noreferrer">
+                  <img src="../../../chiarashop-logo.png" alt="chiarashop" />
+                </a>
               </div>
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="https://inlei.pl/" target="_blank" rel="noopener noreferrer">
+                  <img src="../../../inlei-logo.png" alt="inlei" />
+                </a>
               </div>
               <div className="portfolio-item">
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <a href="http://goodside.com.pl" target="_blank" rel="noopener noreferrer">
+                  <img src="../../../goodside-logo.png" alt="goodside" />
+                </a>
               </div>
             </div>
           </ScrollAnimation>
@@ -181,7 +209,7 @@ class Portfolio extends React.Component {
         >
           <h2 className="portfolio-item-header">{this.state.name}</h2>
           <p className="portfolio-item-desc">{this.state.desc}</p>
-          <a className="portfolio-item-link" href={this.state.link}>
+          <a className="portfolio-item-link" href={this.state.link} target="_blank" rel="noopener noreferrer">
             {this.state.linkText}
           </a>
         </ScrollAnimation>

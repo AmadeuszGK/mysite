@@ -65,9 +65,9 @@ const Offer = ({ siteTitle }) => (
           <h3>Administrowanie stronami</h3>
           <p>
             Moi klienci zawsze mogą na mnie liczyć, pomagam w obsłudze stron i
-            skleów internetowych, wdrażam podsyłane treści lub wprowadzam
-            modyfikacje. Ponadto dbam by wszystko było zaktualizowane, działało
-            sprawnie oraz tworzę kopie zapasowe.
+            sklepów internetowych, wdrażam podsyłane treści lub wprowadzam
+            modyfikacje. Ponadto dbam, aby wszystko było zaktualizowane,
+            działało sprawnie oraz tworzę kopie zapasowe.
           </p>
         </ScrollAnimation>
       </div>

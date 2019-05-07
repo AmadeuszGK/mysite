@@ -1,14 +1,18 @@
-import React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+  <div style={{ height: 100 + "vh" }} className="error-site">
+    <div className="canvas-container">
+      <canvas id="stars" width="300" />
+      <div className="canvas-text">
+        <h1>BŁĄD 404</h1>
+        <p>UPSS! WYGLĄDA NA TO, ŻE ZABŁĄDZIŁEŚ</p>
+        <a className="link-home" href="https://amadeuszgrzesiak.com">
+          POWRÓT NA STRONĘ GŁÓWNĄ
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
-export default NotFoundPage
+export default NotFoundPage;

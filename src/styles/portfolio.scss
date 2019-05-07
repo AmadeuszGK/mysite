@@ -103,7 +103,7 @@
 
 .portfolio-item {
     width: 30%;
-    height: auto;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,10 +111,11 @@
     padding-right: 60px;
     padding-bottom: 20px;
     padding-top: 20px;
+    cursor: pointer;
 
     img {
-        width: 100%;
-        height: auto;
+        max-height: 200px !important;
+        width: auto;
         cursor: pointer;
         transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     }
@@ -226,6 +227,11 @@
         padding-right: 25px;
         padding-bottom: 10px;
         padding-top: 30px;
+        height: 140px;
+
+        img {
+            max-width: 90%;
+        }
     }
 
     .portfolio-container-content {
@@ -273,6 +279,7 @@
 
     .portfolio-item {
         width: 50%;
+        height: 120px;
     }
 
     .portfolio-container-content {
@@ -289,6 +296,7 @@
     }
 
     .portfolio-item {
+        height: 150px;
         padding-left: 0;
         padding-bottom: 0px;
         padding-right: 50px;
@@ -339,10 +347,14 @@
         top: auto;
         height: 35%;
     }
+
+    .portfolio-item {
+        height: 170px;
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1350.98px) {
+@media (min-width: 1200px) and (max-width: 1450.98px) {
     .portfolio-about {
         p {
             font-size: 22px;
@@ -353,5 +365,9 @@
         p {
             font-size: 22px;
         }
+    }
+
+    .portfolio-item {
+        height: 200px;
     }
 }

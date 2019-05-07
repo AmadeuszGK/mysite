@@ -9,7 +9,8 @@ var words = [
     "INLEI ITALY",
     "CHIARASHOP",
     "PAŁKA GOŁĘBIE",
-    "GOODSIDE"
+    "GOODSIDE",
+    "WOLNOŚCI 14"
   ],
   part,
   i = 0,
@@ -79,7 +80,7 @@ const About = ({ siteTitle }) => (
           Stwórzmy coś razem!
         </p>
 
-        <a href="https://onet.pl">ZOBACZ MOJE CV</a>
+        <a href="/Portfolio-Amadeusz-Grzesiak.pdf" target="_blank" rel="noopener noreferrer">ZOBACZ MOJE CV</a>
 
         <div className="typing-box">
           <p>Dumny ze współpracy z&nbsp;&nbsp;</p>
