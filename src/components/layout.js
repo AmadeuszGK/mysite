@@ -7,7 +7,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+// import { StaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import About from "./about";
 import Portfolio from "./portfolio";
@@ -19,8 +19,8 @@ import Menu from "./menu";
 import "./layout.css";
 import "../styles/main.scss";
 
-import Helmet from "react-helmet";
-import { withPrefix } from "gatsby";
+// import Helmet from "react-helmet";
+// import { withPrefix } from "gatsby";
 import "animate.css/animate.min.css";
 
 if (typeof window !== "undefined") {
@@ -28,51 +28,71 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
 }
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Helmet>
-          <script src={withPrefix("delaunay.js")} type="text/javascript" />
-          <script src={withPrefix("require.js")} type="text/javascript" />
-          <script src={withPrefix("canvas.js")} type="text/javascript" />
-          <script src={withPrefix("menu-toggle.js")} type="text/javascript" />
-          <script src={withPrefix("typed.js")} type="text/javascript" />
-        </Helmet>
 
-        <div className="website-content">
-          <Menu />
+class Layout extends React.Component {
 
-          <div className="main-content">
-            <div className="main-content-button" />
+  componentDidMount () {
+    const script = document.createElement("script");
+    script.src = "/delaunay.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-            <Header siteTitle={data.site.siteMetadata.title} />
+    const script1 = document.createElement("script");
+    script1.src = "/require.js";
+    script1.async = true;
+    document.body.appendChild(script1);
 
-            <main>
-              {children}
-              <About />
-              <Offer />
-              <Portfolio />
-              <Skills />
-              <Contact />
-            </main>
+    const script2 = document.createElement("script");
+    script2.src = "/canvas.js";
+    script2.async = true;
+    document.body.appendChild(script2);
 
-            <Footer />
+    const script3 = document.createElement("script");
+    script3.src = "/menu-toggle.js";
+    script3.async = true;
+    document.body.appendChild(script3);
+
+    const script4 = document.createElement("script");
+    script4.src = "/typed.js";
+    script4.async = true;
+    document.body.appendChild(script4);
+}
+
+  render () {
+    return (
+
+        <div>
+          {/* <Helmet>
+            <script src={withPrefix("delaunay.js")} type="text/javascript" />
+            <script src={withPrefix("require.js")} type="text/javascript" />
+            <script src={withPrefix("canvas.js")} type="text/javascript" />
+            <script src={withPrefix("menu-toggle.js")} type="text/javascript" />
+            <script src={withPrefix("typed.js")} type="text/javascript" />
+          </Helmet> */}
+  
+          <div className="website-content">
+            <Menu />
+  
+            <div className="main-content">
+              <div className="main-content-button" />
+  
+              <Header/>
+  
+              <main>
+                <About />
+                <Offer />
+                <Portfolio />
+                <Skills />
+                <Contact />
+              </main>
+  
+              <Footer />
+            </div>
           </div>
-        </div>
-      </>
-    )}
-  />
-);
+          </div>
+    )
+  }
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired
