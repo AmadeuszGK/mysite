@@ -62,13 +62,6 @@ class Layout extends React.Component {
     return (
 
         <div>
-          {/* <Helmet>
-            <script src={withPrefix("delaunay.js")} type="text/javascript" />
-            <script src={withPrefix("require.js")} type="text/javascript" />
-            <script src={withPrefix("canvas.js")} type="text/javascript" />
-            <script src={withPrefix("menu-toggle.js")} type="text/javascript" />
-            <script src={withPrefix("typed.js")} type="text/javascript" />
-          </Helmet> */}
   
           <div className="website-content">
             <Menu />
