@@ -18,7 +18,7 @@ function Header() {
           </h1>
           <h2>{headerText}</h2>
           <p>
-            NOWOCZESNE, RESPONSYWNE <strong>STRONY I SKLEPY INTERNETOWE</strong>
+            NOWOCZESNE STRONY I SKLEPY INTERNETOWE
           </p>
         </div>
         <Link className="scroll-down" to="/#section-about-me">

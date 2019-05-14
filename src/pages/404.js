@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/main.scss";
 
 const NotFoundPage = () => (
   <div style={{ height: 100 + "vh" }} className="error-site">

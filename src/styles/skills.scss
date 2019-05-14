@@ -151,7 +151,7 @@
 .skill-text {
     font-family: "Montserrat Regular";
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
     margin: 0;
     color: #fff;
@@ -174,13 +174,14 @@
         height: auto;
         padding: 0;
         margin: 0;
+        padding-top: 50px;
     }
 
     .skills-desc {
         padding: 35px;
         padding-top: 0;
         width: 100%;
-
+        padding-bottom: 50px;
         p {
             font-size: 19px;
             margin: 0;
@@ -189,11 +190,14 @@
 
     .skills {
         width: 100%;
+        background-attachment: scroll;
     }
 
     .all-skills {
         padding: 30px;
         width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .skill-text {
@@ -227,29 +231,29 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .section-skills {
         height: auto;
-        padding-bottom: 120px;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-top: 0px;
+        padding: 70px 0px 70px 0px;
+        margin: 0;
     }
 
     .skills-desc {
-        padding: 35px;
+        padding: 0px 35px 70px 35px;
         width: 100%;
-
+        padding-bottom: 50px;
         p {
             font-size: 19px;
             margin: 0;
+            max-width: 70%;
         }
     }
 
     .skills {
         width: 100%;
+        background-attachment: scroll;
     }
 
     .all-skills {
-        padding: 35px;
         width: 100%;
+        padding: 70px 35px 70px 35px;
     }
 
     .skill-text {
@@ -286,10 +290,8 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
     .section-skills {
         height: auto;
+        padding: 0;
         padding-bottom: 120px;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-top: 150px;
     }
 
     .skills-desc {
@@ -306,7 +308,7 @@
     }
 
     .skill-text {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .skill-image {
@@ -327,6 +329,10 @@
     .skills-bottom-square {
         width: 30%;
         right: 0px;
+    }
+
+    .skills {
+        background-attachment: scroll;
     }
 }
 
@@ -355,7 +361,7 @@
     }
 
     .skill-text {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .skill-image {
@@ -365,6 +371,10 @@
     .skills-box {
         height: auto;
         width: 100%;
+    }
+
+    .skills {
+        background-attachment: scroll;
     }
 }
 
@@ -378,3 +388,9 @@
         width: 100%;
     }
 }
+
+@media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
+    .section-skills {
+        margin: 0;
+    }
+ }

@@ -97,7 +97,7 @@
         padding-left: 35px;
         padding-right: 35px;
         height: auto;
-        padding-top: 50px;
+        padding-top: 65px;
     }
 
     .offer-items {
@@ -280,5 +280,13 @@
     .section-offer {
         padding-left: 120px;
         padding-right: 120px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
+    .section-offer {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 70px;
     }
 }

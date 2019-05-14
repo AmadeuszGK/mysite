@@ -173,7 +173,7 @@
         width: 38%;
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 50px;
         margin: 0;
     }
 }
@@ -194,10 +194,7 @@
 @media (max-width: 575.98px) {
     .section-contact {
         height: auto;
-        padding-top: 70px;
-        padding-bottom: 70px;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding: 50px 35px 70px 35px;
     }
 
     .contact-box {
@@ -233,6 +230,7 @@
         padding-bottom: 70px;
         padding-left: 35px;
         padding-right: 35px;
+
     }
 
     .contact-box {
@@ -295,7 +293,7 @@
 
     .contact-image {
         img {
-            width: 60%;
+            width: 50%;
             position: absolute;
             bottom: 0;
             right: 0px;

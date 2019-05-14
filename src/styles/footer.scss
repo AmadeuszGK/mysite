@@ -147,7 +147,7 @@ footer {
 @media (max-width: 575.98px) {
     footer {
         .skills-bottom-square {
-            top: -230px;
+            top: -210px;
             right: 0;
             left: auto;
             width: 50px;
@@ -166,6 +166,7 @@ footer {
 
     .footer-content {
         padding: 35px;
+        background-attachment: scroll;
     }
 }
 
@@ -193,6 +194,11 @@ footer {
     .footer-content {
         padding-left: 35px;
         padding-right: 35px;
+        background-attachment: scroll;
+    }
+
+    .footer-content {
+        background-attachment: scroll;
     }
 }
 
@@ -215,6 +221,9 @@ footer {
             text-align: center;
         }
     }
+    .footer-content {
+        background-attachment: scroll;
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -222,6 +231,7 @@ footer {
     .footer-content {
         padding-left: 70px;
         padding-right: 70px;
+        background-attachment: scroll;
     }
 
     footer {
@@ -243,10 +253,18 @@ footer {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1570.98px) {
+    .footer-content {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
     footer {
         .skills-bottom-square {
             top: -350px;
             width: 50px;
         }
+    }
+    .footer-menu-item{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

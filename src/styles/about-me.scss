@@ -111,7 +111,7 @@
     width: calc(100% - 70px);
     box-shadow: 0 6px 19px 0 rgba(0, 0, 0, .11);
     background-image: url('/me.jpg');
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,8 +251,8 @@
     }
 
     .about-me-box {
-        bottom: 0px;
-        left: 35px;
+        bottom: -15px;
+        left: 50px;
         width: 100%;
     }
 }
@@ -261,7 +261,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .section-about-me {
         padding: 0;
-        margin-top: 70px;
+        margin-top: 0px;
         height: auto;
     }
 
@@ -270,7 +270,7 @@
     }
 
     .about-me-text {
-        padding-top: 50px;
+        padding-top: 70px;
         margin: 0;
         max-width: 60%;
         padding-left: 35px;
@@ -461,7 +461,7 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1500.98px) {
+@media (min-width: 1200px) and (max-width: 1600.98px) {
     .about-me-header {
         margin-bottom: 40px;
     }
@@ -491,6 +491,7 @@
 @media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
     .section-about-me {
         padding: 0;
+        height: auto;
     }
 
     .about-me {
@@ -498,8 +499,8 @@
     }
 
     .about-me-text {
-        padding-top: 30px;
-        height: 100vh;
+        padding-top: 70px;
+        height: 110vh;
         margin: 0;
         max-width: calc(100% - 70px);
         padding-left: 50px;
@@ -529,7 +530,7 @@
     }
 
     .about-me-images {
-        height: 80vh;
+        height: 90vh;
     }
 
     .about-me-image {
@@ -559,43 +560,43 @@
     }
 }
 
-//  @media (min-width: 851px) and (max-width: 1300px) and (orientation: landscape) {
-//     .about-me-header {
-//         margin-bottom: 50px;
-//     }
-//     .about-me-text {
-//         padding-top: 70px;
-//         height: 100vh;
-//         margin: 0;
-//         max-width: 50%;
-//         padding-left: 100px;
-//         h1 {
-//             padding-bottom: 50px;
-//             max-width: 70%;
-//         }
-//         p {
-//             font-size: 30px;
-//             margin-bottom: 50px;
-//             max-width: 70%;
-//         }
-//     }
-//     .typing-box {
-//         left: 100px;
-//         top: 88%;
-//         p {
-//             font-size: 13px;
-//             margin: 0;
-//         }
-//         .word {
-//             font-size: 13px;
-//         }
-//     }
+ @media (min-width: 851px) and (max-width: 1300px) and (orientation: landscape) {
+    .about-me-header {
+        margin-bottom: 50px;
+    }
+    .about-me-text {
+        padding-top: 70px;
+        height: 100vh;
+        margin: 0;
+        max-width: 50%;
+        padding-left: 100px;
+        h1 {
+            padding-bottom: 50px;
+            max-width: 70%;
+        }
+        p {
+            font-size: 30px;
+            margin-bottom: 50px;
+            max-width: 70%;
+        }
+    }
+    .typing-box {
+        left: 100px;
+        top: 88%;
+        p {
+            font-size: 13px;
+            margin: 0;
+        }
+        .word {
+            font-size: 13px;
+        }
+    }
 
-//     .about-me {
-//         flex-direction: row;
-//     }
-//     .about-me-images {
-//         height: 80vh;
-//         margin-top: 70px;
-//     }
-//  }
+    .about-me {
+        flex-direction: row;
+    }
+    .about-me-images {
+        height: 80vh;
+        margin-top: 70px;
+    }
+ }

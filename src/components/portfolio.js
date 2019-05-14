@@ -31,7 +31,7 @@ class Portfolio extends React.Component {
   changeItem1() {
     this.setState({
       id: 1,
-      name: "AmadeuszGrzesiak.com",
+      name: "amadeuszgrzesiak.com",
       desc:
         "Moje portfolio, które stworzyłem przy użyciu nowoczesnego generatora stron statycznych GatsbyJS, który oparty jest o ReactJS. Kod strony możesz zobaczyć tutaj.",
       link: "https://github.com/AmadeuszGK/mysite",
@@ -69,7 +69,7 @@ class Portfolio extends React.Component {
       id: 4,
       name: "Inlei",
       desc:
-        "Sklep internetowy stworzony dla polskich dystrubutorów produktów włoskiej firmy Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem i wiele ciekawych rozwiązań przyśpieszających pracę.",
+        "Sklep internetowy stworzony dla polskich dystrubutorów produktów włoskiej firmy Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem.",
       link: "https://inlei.pl/",
       linkText: "inlei.pl",
       bg: "url('chiara-bg.jpg')"
@@ -161,18 +161,18 @@ class Portfolio extends React.Component {
 
             <div className="portfolio-items-mobile">
               <div className="portfolio-item">
-                <a href="https://promaticgames.com" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="../../../promaticgames-logo.png"
-                    alt="promatic games"
-                  />
-                </a>
-              </div>
-              <div className="portfolio-item">
                 <a href="https://github.com/AmadeuszGK/mysite" target="_blank" rel="noopener noreferrer">
                   <img
                     src="../../../agrzesiak-logo.png"
                     alt="amadeusz grzesiak"
+                  />
+                </a>
+              </div>
+              <div className="portfolio-item">
+                <a href="https://promaticgames.com" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="../../../promaticgames-logo.png"
+                    alt="promatic games"
                   />
                 </a>
               </div>

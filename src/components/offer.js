@@ -34,7 +34,7 @@ const Offer = ({ siteTitle }) => (
           animateOnce={true}
         >
           <img src="../../../www.png" alt="sklepy stron internetowe" />
-          <h3>Strony WWW i Sklepy</h3>
+          <h3>Strony WWW i sklepy</h3>
           <p>
             Tworzę strony firmowe oraz sklepy internetowe. Wszystko dostosowane
             do urządzeń mobilnych. Tworzę strony statyczne oraz dynamiczne z
@@ -48,7 +48,7 @@ const Offer = ({ siteTitle }) => (
           animateOnce={true}
         >
           <img src="../../../fix.png" alt="naprawa stron internetowych" />
-          <h3>Naprawa starych Stron</h3>
+          <h3>Naprawa starych stron</h3>
           <p>
             Internet jest pełen zepsutych, zaniedbanych lub przestarzałych stron
             internetowych. Dobieram odpowiednie metody do zaistniałej sytuacji:
