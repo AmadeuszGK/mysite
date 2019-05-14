@@ -51,11 +51,6 @@ class Layout extends React.Component {
     script3.src = "/menu-toggle.js";
     script3.async = true;
     document.body.appendChild(script3);
-
-    const script4 = document.createElement("script");
-    script4.src = "/typed.js";
-    script4.async = true;
-    document.body.appendChild(script4);
 }
 
   render () {
