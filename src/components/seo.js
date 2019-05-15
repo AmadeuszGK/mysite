@@ -37,15 +37,15 @@ function SEO({ description, lang, meta, keywords, title }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription
+          content: `Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!`
         },
         {
           property: `og:title`,
-          content: title
+          content: `Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe`
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: `Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!`
         },
         {
           property: `og:type`,
@@ -57,15 +57,15 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: `Amadesz Grzesiak`
         },
         {
           name: `twitter:title`,
-          content: title
+          content: `Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe`
         },
         {
           name: `twitter:description`,
-          content: metaDescription
+          content: `Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!`
         },
         {
           name: `google-site-verification`, 

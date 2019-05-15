@@ -1026,7 +1026,7 @@
     },
     "Site": {
       "siteMetadata": {
-        "title": "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe ",
+        "title": "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe",
         "description": "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!",
         "author": "Amadeusz Grzesiak"
       },
@@ -1037,7 +1037,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "c1e13cb2812a161517d9c43e264d27c9",
+        "contentDigest": "1e2eed560c4a96f082a2e1e9c80d6460",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
