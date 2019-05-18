@@ -62,7 +62,7 @@ const Offer = ({ siteTitle }) => (
           animateOnce={true}
         >
           <img src="../../../settings.png" alt="adminiastracja stron" />
-          <h3>Administrowanie stronami</h3>
+          <h3>Administrowanie stron</h3>
           <p>
             Moi klienci zawsze mogą na mnie liczyć, pomagam w obsłudze stron i
             sklepów internetowych, wdrażam podsyłane treści lub wprowadzam

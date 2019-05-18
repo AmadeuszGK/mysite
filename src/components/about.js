@@ -5,12 +5,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 ////////////// JQUERY TYPING START ////////////////////
 var words = [
-    "PROMATIC GROUP",
-    "INLEI ITALY",
-    "CHIARASHOP",
-    "PAŁKA GOŁĘBIE",
-    "GOODSIDE",
-    "WOLNOŚCI 14"
+  "PAŁKA GOŁĘBIE",
+  "GOODSIDE",
+  "WOLNOŚCI 14",
+  "PROMATIC GROUP",
+  "INLEI ITALY",
+  "CHIARASHOP",
   ],
   part,
   i = 0,

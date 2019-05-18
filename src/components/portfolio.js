@@ -69,10 +69,10 @@ class Portfolio extends React.Component {
       id: 4,
       name: "Inlei",
       desc:
-        "Sklep internetowy stworzony dla polskich dystrubutorów produktów włoskiej firmy Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem.",
+        "Sklep internetowy stworzony dla polskich dystrubutorów produktów włoskiej firmy Inlei. Oparty jest na Wordpress i Woocomerce. Posiada panel do zarządzania sklepem. Niedługo start strony!",
       link: "https://inlei.pl/",
       linkText: "inlei.pl",
-      bg: "url('chiara-bg.jpg')"
+      bg: "url('')"
     });
   }
 

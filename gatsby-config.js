@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe`,
+    siteUrl: `https://amadeuszgrzesiak.com`,
     description: `Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!`,
     author: `Amadeusz Grzesiak`
   },
