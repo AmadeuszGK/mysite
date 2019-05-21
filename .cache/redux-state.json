@@ -488,6 +488,79 @@
         "owner": "internal-data-bridge"
       }
     },
+    "c3082b23-1532-5cf9-89ec-33fcc0a9a3ab": {
+      "resolve": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/node_modules/gatsby-plugin-google-analytics",
+      "id": "c3082b23-1532-5cf9-89ec-33fcc0a9a3ab",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.20",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "UA-140137342-1"
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.20",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "16ef037cd821350356c8db9c9f2aed30",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9": {
       "resolve": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/node_modules/gatsby-transformer-sharp",
       "id": "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9",
@@ -800,7 +873,7 @@
       "resolve": "/Projekty/amadeuszgrzesiak/strona/agrzesiak",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "fed375480e259e877bf719efdc6572bd",
+      "version": "3015e594678b6c3f4d36da9311bf1b2d",
       "pluginOptions": {
         "plugins": []
       },
@@ -832,7 +905,7 @@
           },
           {
             "name": "gatsby-plugin-google-analytics",
-            "version": "^2.0.19"
+            "version": "^2.0.20"
           },
           {
             "name": "gatsby-plugin-manifest",
@@ -916,7 +989,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "7dc11245dd151f78c2be47e6ac63acea",
+        "contentDigest": "e2921f35c9616aeb082967191cf63f5c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1033,12 +1106,14 @@
       },
       "port": 8000,
       "host": "localhost",
-      "buildTime": "2019-05-14T16:48:13.133Z",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-05-21T16:13:04.093Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "9050cce83c4980cda8c94ccaa0fbdc6b",
+        "contentDigest": "96452ad684cae0c8373ed26ab3bbc0d7",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1048,7 +1123,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "8d505dc344565737579c89d3c98e977a",
+        "contentDigest": "e9c24e8c6eb913bb338f5b21a727df76",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1060,7 +1135,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-05-14T16:46:10.748Z",
-      "accessTime": "2019-05-14T16:48:18.192Z",
+      "accessTime": "2019-05-21T16:13:09.541Z",
       "changeTime": "2019-05-14T16:46:10.748Z",
       "birthTime": "2019-05-07T16:28:04.506Z",
       "root": "/",
@@ -1078,11 +1153,11 @@
       "blksize": 4096,
       "ino": 4145236,
       "blocks": 0,
-      "atimeMs": 1557852498191.8188,
+      "atimeMs": 1558455189541.3127,
       "mtimeMs": 1557852370747.5469,
       "ctimeMs": 1557852370747.5469,
       "birthtimeMs": 1557246484506.4087,
-      "atime": "2019-05-14T16:48:18.192Z",
+      "atime": "2019-05-21T16:13:09.541Z",
       "mtime": "2019-05-14T16:46:10.748Z",
       "ctime": "2019-05-14T16:46:10.748Z",
       "birthtime": "2019-05-07T16:28:04.506Z"
@@ -1107,7 +1182,7 @@
       "size": 67424,
       "prettySize": "67.4 kB",
       "modifiedTime": "2019-05-07T19:59:30.000Z",
-      "accessTime": "2019-05-14T16:46:12.472Z",
+      "accessTime": "2019-05-17T13:32:07.359Z",
       "changeTime": "2019-05-14T16:46:10.799Z",
       "birthTime": "2019-05-07T19:59:30.000Z",
       "root": "/",
@@ -1125,11 +1200,11 @@
       "blksize": 4096,
       "ino": 4193214,
       "blocks": 136,
-      "atimeMs": 1557852372472.2876,
+      "atimeMs": 1558099927359.1396,
       "mtimeMs": 1557259170000,
       "ctimeMs": 1557852370799.2612,
       "birthtimeMs": 1557259170000,
-      "atime": "2019-05-14T16:46:12.472Z",
+      "atime": "2019-05-17T13:32:07.359Z",
       "mtime": "2019-05-07T19:59:30.000Z",
       "ctime": "2019-05-14T16:46:10.799Z",
       "birthtime": "2019-05-07T19:59:30.000Z"
@@ -1210,7 +1285,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "3c748439287dbea9ad1b1db7259c3a7f"
+    "PLUGINS_HASH": "475ce0876b2a9f404cb18385bae2aff8"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1237,7 +1312,7 @@
       "pages": [
         "/dev-404-page/"
       ],
-      "isInBootstrap": false
+      "isInBootstrap": true
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
@@ -1246,7 +1321,7 @@
         "/404/",
         "/404.html"
       ],
-      "isInBootstrap": false
+      "isInBootstrap": true
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
@@ -1254,7 +1329,7 @@
       "pages": [
         "/"
       ],
-      "isInBootstrap": false
+      "isInBootstrap": true
     }
   },
   "staticQueryComponents": {

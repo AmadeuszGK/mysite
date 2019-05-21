@@ -55,8 +55,6 @@ class Layout extends React.Component {
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     document.lang = "pl-PL";
-    document.author = "Amadesz Grzesiak";
-    document.querySelector('meta[name="description"]').setAttribute("Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!", _desc);
   }
 
   render () {
