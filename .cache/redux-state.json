@@ -1312,7 +1312,7 @@
       "pages": [
         "/dev-404-page/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
@@ -1321,7 +1321,7 @@
         "/404/",
         "/404.html"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     },
     "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js": {
       "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
@@ -1329,7 +1329,7 @@
       "pages": [
         "/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     }
   },
   "staticQueryComponents": {

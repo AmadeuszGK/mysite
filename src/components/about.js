@@ -86,7 +86,7 @@ class About extends React.Component {
           Stwórzmy coś razem!
         </p>
 
-        <a href="/Portfolio-Amadeusz-Grzesiak.pdf" target="_blank" rel="noopener noreferrer">ZOBACZ MOJE CV</a>
+        <a href="/CV-Amadeusz-Grzesiak.pdf" target="_blank" rel="noopener noreferrer">ZOBACZ MOJE CV</a>
 
         <div className="typing-box">
           <p>Dumny ze współpracy z&nbsp;&nbsp;</p>
