@@ -17,8 +17,8 @@ const Offer = ({ siteTitle }) => (
         </div>
 
         <h2>
-          Nowocześność
-          <br />i użtkowość
+          Nowoczesność
+          <br />i użytkowość
         </h2>
         <p>
           Moje strony charakteryzuje przede wszystkim intuicyjna obsługa oraz
