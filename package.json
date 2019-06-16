@@ -23,6 +23,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-loader-spinner": "^2.3.0",
     "react-transition-group": "^4.0.0",
     "smooth-scroll": "^16.0.3",
     "typed.js": "^2.0.10"

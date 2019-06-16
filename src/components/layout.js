@@ -22,14 +22,20 @@ import "../styles/main.scss";
 // import Helmet from "react-helmet";
 // import { withPrefix } from "gatsby";
 import "animate.css/animate.min.css";
-
+import Loader from 'react-loader-spinner'
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]');
 }
 
 
+
 class Layout extends React.Component {
+
+  constructor () {
+    super(); 
+    this.state = {isLoading: true} 
+  }
 
   componentDidMount () {
     const script = document.createElement("script");
@@ -55,12 +61,21 @@ class Layout extends React.Component {
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     document.lang = "pl-PL";
+    setTimeout(() => this.setState({isLoading: false}), 3000)
   }
 
-  render () {
-    return (
 
-        <div>
+  render () {
+    if(this.state.isLoading){
+      return(
+        <div class="loader-content">
+        <Loader type="Oval" color="#d83434" height={110} width={110} />
+        </div>
+      )
+    }
+
+    return (
+      <div>
   
           <div className="website-content">
             <Menu />
