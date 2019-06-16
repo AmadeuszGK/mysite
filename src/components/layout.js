@@ -31,13 +31,18 @@ if (typeof window !== "undefined") {
 
 
 class Layout extends React.Component {
+  state = {isLoading: true}
 
   constructor () {
     super(); 
     this.state = {isLoading: true} 
   }
 
+  componentWillMount () {
+  }
+  
   componentDidMount () {
+    this.setState({ isLoading: false });
     const script = document.createElement("script");
     script.src = "/delaunay.js";
     script.async = true;
@@ -45,7 +50,7 @@ class Layout extends React.Component {
 
     const script1 = document.createElement("script");
     script1.src = "/require.js";
-    script1.async = true;
+    script1.async = true; 
     document.body.appendChild(script1);
 
     const script2 = document.createElement("script");
@@ -61,14 +66,13 @@ class Layout extends React.Component {
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     document.lang = "pl-PL";
-    setTimeout(() => this.setState({isLoading: false}), 3000)
   }
 
 
   render () {
     if(this.state.isLoading){
       return(
-        <div class="loader-content">
+        <div className="loader-content">
         <Loader type="Oval" color="#d83434" height={110} width={110} />
         </div>
       )
