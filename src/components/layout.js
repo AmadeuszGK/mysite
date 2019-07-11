@@ -36,13 +36,7 @@ class Layout extends React.Component {
   constructor () {
     super(); 
     this.state = {isLoading: true} 
-  }
 
-  componentWillMount () {
-  }
-  
-  componentDidMount () {
-    this.setState({ isLoading: false });
     const script = document.createElement("script");
     script.src = "/delaunay.js";
     script.async = true;
@@ -66,6 +60,10 @@ class Layout extends React.Component {
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     document.lang = "pl-PL";
+  }
+  
+  componentDidMount () {
+    this.setState({ isLoading: false });
   }
 
 
