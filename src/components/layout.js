@@ -40,9 +40,9 @@ class Layout extends React.Component {
     // document.body.appendChild(script1);
 
 
-    document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
-    document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
-    document.lang = "pl-PL";
+    // document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
+    // document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
+    // document.lang = "pl-PL";
 
     this.state = {
       isLoading: true,
