@@ -3,13 +3,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 class  Menu extends React.Component  {
-  constructor () {
-    super();
-
-  }
-
-
-
 
   render() {
     return(
