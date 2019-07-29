@@ -15,7 +15,6 @@ import "../styles/main.scss";
 
 
 
-
 import "animate.css/animate.min.css";
 import Loader from 'react-loader-spinner'
 if (typeof window !== "undefined") {
@@ -40,10 +39,6 @@ class Layout extends React.Component {
     // script1.async = true; 
     // document.body.appendChild(script1);
 
-    const script2 = document.createElement("script");
-    script2.src = "/canvas.js";
-    script2.async = true;
-    document.body.appendChild(script2);
 
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
@@ -62,6 +57,10 @@ class Layout extends React.Component {
 
   componentDidMount () {
     this.setState({ isLoading: false });
+
+    const script2 = document.createElement("script");
+    script2.src = "/canvas.js";
+    document.body.appendChild(script2);
   }
 
 
