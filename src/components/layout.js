@@ -31,7 +31,6 @@ if (typeof window !== "undefined") {
 
 
 class Layout extends React.Component {
-  state = {isLoading: true}
 
   constructor () {
     super(); 
@@ -52,38 +51,41 @@ class Layout extends React.Component {
     script2.async = true;
     document.body.appendChild(script2);
 
-    const script3 = document.createElement("script");
-    script3.src = "/menu-toggle.js";
-    script3.async = true;
-    document.body.appendChild(script3);
-
     document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     document.lang = "pl-PL";
+
+    this.state = {
+      isLoading: true,
+      showMenu: false
+    }
   }
   
+  toglleMenu = () => {
+    const currentState = this.state.showMenu;
+    this.setState({ showMenu: !currentState });
+  }
+
   componentDidMount () {
     this.setState({ isLoading: false });
   }
 
 
   render () {
-    if(this.state.isLoading){
-      return(
-        <div className="loader-content">
-        <Loader type="Oval" color="#d83434" height={110} width={110} />
-        </div>
-      )
-    }
 
     return (
       <div>
   
-          <div className="website-content">
-            <Menu />
+          <div className={this.state.showMenu ? "website-content--show-menu" : "website-content"}>
+
+            <div className="loader-content" style={{display: this.state.isLoading ? 'flex' : 'none' }}>
+              <Loader type="Oval" color="#d83434" height={110} width={110} />
+            </div>
+
+            <Menu passedFunction={this.toglleMenu} showMenu={this.state.showMenu}/>
   
             <div className="main-content">
-              <div className="main-content-button" />
+              <div className="main-content-button" onClick={this.toglleMenu.bind(this)}/>
   
               <Header/>
   

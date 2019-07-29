@@ -2,10 +2,21 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "gatsby";
 
-const Menu = ({ siteTitle }) => (
-  <nav className="side-menu">
-    <div className="menu-button">
-      <div id="nav-icon3">
+class  Menu extends React.Component  {
+  constructor () {
+    super();
+
+  }
+
+
+
+
+  render() {
+    return(
+      // <nav className={this.state.showMenu ? "side-menu show" : "side-menu"}>
+      <nav className="side-menu"> 
+      <div className="menu-button">
+      <div id="nav-icon3" onClick={this.props.passedFunction} className={this.props.showMenu ? "open" : ""}>
         <span />
         <span />
         <span />
@@ -15,27 +26,27 @@ const Menu = ({ siteTitle }) => (
 
     <ul>
       <li>
-        <Link className="navButton" to="/#section-about-me">
+        <Link className="navButton" to="/#section-about-me" onClick={this.props.passedFunction}>
           O mnie
         </Link>
       </li>
       <li>
-        <Link className="navButton" to="/#section-offer">
+        <Link className="navButton" to="/#section-offer" onClick={this.props.passedFunction}>
           Oferta
         </Link>
       </li>
       <li>
-        <Link className="navButton" to="/#section-portfolio">
+        <Link className="navButton" to="/#section-portfolio" onClick={this.props.passedFunction}>
           Portfolio
         </Link>
       </li>
       <li>
-        <Link className="navButton" to="/#section-skills">
+        <Link className="navButton" to="/#section-skills" onClick={this.props.passedFunction}>
           Umiejętności
         </Link>
       </li>
       <li>
-        <Link className="navButton" to="/#section-contact">
+        <Link className="navButton" to="/#section-contact" onClick={this.props.passedFunction}>
           Kontakt
         </Link>
       </li>
@@ -69,7 +80,10 @@ const Menu = ({ siteTitle }) => (
       </div>
     </ul>
   </nav>
-);
+    )
+  }
+  
+};
 
 Menu.propTypes = {
   siteTitle: PropTypes.string

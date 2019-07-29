@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 ////////////// JQUERY TYPING START ////////////////////
 var words = [
-  "PAŁKA GOŁĘBIE",
+  "QUADRIGA GMBH",
   "GOODSIDE",
   "WOLNOŚCI 14",
   "PROMATIC GROUP",

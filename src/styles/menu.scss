@@ -52,6 +52,7 @@
 }
 
 .website-content {
+    position: relative;
     .main-content-button {
         display: none;
     }
@@ -65,7 +66,8 @@
     }
 }
 
-.website-content[showmenu="true"] {
+.website-content--show-menu {
+    position: relative;
     .main-content-button {
         display: block;
     }
@@ -231,11 +233,11 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .website-content[showmenu="true"] .side-menu {
+    .website-content--show-menu .side-menu {
         transform: translateX(-250px);
     }
 
-    .website-content[showmenu="true"] .main-content {
+    .website-content--show-menu .main-content {
         transform: translateX(-250px);
     }
 
@@ -277,11 +279,11 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .website-content[showmenu="true"] .side-menu {
+    .website-content--show-menu .side-menu {
         transform: translateX(-270px);
     }
 
-    .website-content[showmenu="true"] .main-content {
+    .website-content--show-menu .main-content {
         transform: translateX(-270px);
     }
 
@@ -323,11 +325,11 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .website-content[showmenu="true"] .side-menu {
+    .website-content--show-menu .side-menu {
         transform: translateX(-270px);
     }
 
-    .website-content[showmenu="true"] .main-content {
+    .website-content--show-menu .main-content {
         transform: translateX(-270px);
     }
 
@@ -379,11 +381,11 @@
 
 
 @media (min-width: 1px) and (max-width: 850px) and (orientation: landscape) {
-    .website-content[showmenu="true"] .side-menu {
+    .website-content--show-menu .side-menu {
         transform: translateX(-250px);
     }
 
-    .website-content[showmenu="true"] .main-content {
+    .website-content--show-menu .main-content {
         transform: translateX(-250px);
     }
 
