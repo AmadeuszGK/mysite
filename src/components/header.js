@@ -4,6 +4,10 @@ import { Link } from "gatsby";
 
 import arrowsWhite from "../images/arrows-white.svg"
 
+
+
+
+
 function Header() {
   const headerText = "<FRONT-END DEVELOPER />";
 

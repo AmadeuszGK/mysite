@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 import Header from "./header";
 import About from "./about";
@@ -16,24 +17,15 @@ import "../styles/main.scss";
 
 import "animate.css/animate.min.css";
 import Loader from 'react-loader-spinner'
+
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
 
-  const script = document.createElement("script");
-  script.src = "/delaunay.js";
-  script.async = true;
-  document.body.appendChild(script);
-
-  const script1 = document.createElement("script");
-  script1.src = "/require.js";
-  script1.async = true; 
-  document.body.appendChild(script1);
-
-  const script2 = document.createElement("script");
-  script2.src = "/canvas.js";
-  script2.async = true; 
-  document.body.appendChild(script2);
 }
+
+// if (typeof document !== 'undefined') {
+
+// }
 
 
 class Layout extends React.Component {
@@ -44,21 +36,6 @@ class Layout extends React.Component {
       isLoading: true,
       showMenu: false
     } 
-
-    const script = document.createElement("script");
-    script.src = "/delaunay.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    const script1 = document.createElement("script");
-    script1.src = "/require.js";
-    script1.async = true; 
-    document.body.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.src = "/canvas.js";
-    script2.async = true; 
-    document.body.appendChild(script2);
 
 
     // document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
@@ -78,6 +55,21 @@ class Layout extends React.Component {
 
 
   render () {
+
+    const script = document.createElement("script");
+    script.src = "/delaunay.js";
+    script.async = true;
+    document.body.appendChild(script);
+  
+    const script1 = document.createElement("script");
+    script1.src = "/require.js";
+    script1.async = true; 
+    document.body.appendChild(script1);
+  
+    const script2 = document.createElement("script");
+    script2.src = "/canvas.js";
+    script2.async = true; 
+    document.body.appendChild(script2);
 
     return (
       <div>
