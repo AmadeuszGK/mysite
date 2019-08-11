@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from 'react-loader-spinner'
+// import Loader from 'react-loader-spinner'
 import PropTypes from "prop-types";
 import Header from "./header";
 import About from "./about";
@@ -12,7 +12,7 @@ import Menu from "./menu";
 import "./layout.css";
 import "../styles/main.scss";
 
-
+import loader from "../images/loader.svg"
 import "animate.css/animate.min.css";
 
 if (typeof window !== "undefined") {
@@ -64,7 +64,7 @@ class Layout extends React.Component {
           <div className={this.state.showMenu ? "website-content--show-menu" : "website-content"}>
 
             <div className="loader-content" style={{display: this.state.isLoading ? 'flex' : 'none' }}>
-              <Loader type="Oval" color="#d83434" height={110} width={110} />
+              <img src={loader} alt="arrow" height={110} width={110}/>
             </div>
 
             <Menu passedFunction={this.toglleMenu} showMenu={this.state.showMenu}/>
