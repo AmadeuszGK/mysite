@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from 'react-loader-spinner'
 import PropTypes from "prop-types";
 import Header from "./header";
 import About from "./about";
@@ -13,7 +14,6 @@ import "../styles/main.scss";
 
 
 import "animate.css/animate.min.css";
-import Loader from 'react-loader-spinner'
 
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
