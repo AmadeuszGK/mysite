@@ -1112,12 +1112,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-08-11T15:06:32.893Z",
+      "buildTime": "2019-08-11T18:13:45.671Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "133b029a3b91f1de699527199c88ce50",
+        "contentDigest": "31d0b6702ff6da0c7936b78db197c6e3",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1127,7 +1127,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "e0603e3d0c0a82d7c70d48e37ac0e0ac",
+        "contentDigest": "c88e390682a8de0b0f01b1c1f2b99ec1",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -1136,11 +1136,11 @@
       "absolutePath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/images",
       "relativePath": "",
       "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2019-05-14T16:46:10.748Z",
-      "accessTime": "2019-08-11T15:06:39.107Z",
-      "changeTime": "2019-05-14T16:46:10.748Z",
+      "size": 2272,
+      "prettySize": "2.27 kB",
+      "modifiedTime": "2019-08-11T15:15:44.888Z",
+      "accessTime": "2019-08-11T18:13:51.994Z",
+      "changeTime": "2019-08-11T15:15:44.888Z",
       "birthTime": "2019-05-07T16:28:04.506Z",
       "root": "/",
       "dir": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src",
@@ -1150,20 +1150,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 3,
+      "nlink": 71,
       "uid": 501,
       "gid": 0,
       "rdev": 0,
       "blksize": 4096,
       "ino": 4145236,
       "blocks": 0,
-      "atimeMs": 1565535999107.4976,
-      "mtimeMs": 1557852370747.5469,
-      "ctimeMs": 1557852370747.5469,
+      "atimeMs": 1565547231993.804,
+      "mtimeMs": 1565536544887.5056,
+      "ctimeMs": 1565536544887.5056,
       "birthtimeMs": 1557246484506.4087,
-      "atime": "2019-08-11T15:06:39.107Z",
-      "mtime": "2019-05-14T16:46:10.748Z",
-      "ctime": "2019-05-14T16:46:10.748Z",
+      "atime": "2019-08-11T18:13:51.994Z",
+      "mtime": "2019-08-11T15:15:44.888Z",
+      "ctime": "2019-08-11T15:15:44.888Z",
       "birthtime": "2019-05-07T16:28:04.506Z"
     },
     "c15b60dc-3a37-55a4-9624-fc1a4f694b02": {
@@ -1221,69 +1221,6 @@
         "contentDigest": "ff59d30e35f0a159d67259fa5a41a3e5",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "SitePage /404/": {
-      "jsonName": "404-22d",
-      "internalComponentName": "Component404",
-      "path": "/404/",
-      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "isCreatedByStatefulCreatePages": true,
-      "context": {},
-      "pluginCreator___NODE": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-      "pluginCreatorId": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
-      "id": "SitePage /404/",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d6b99ef587133810a262fdd5d648dc96",
-        "description": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /": {
-      "jsonName": "index",
-      "internalComponentName": "ComponentIndex",
-      "path": "/",
-      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
-      "componentChunkName": "component---src-pages-index-js",
-      "isCreatedByStatefulCreatePages": true,
-      "context": {},
-      "pluginCreator___NODE": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-      "pluginCreatorId": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
-      "id": "SitePage /",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "8e7e7791aa905934a7022bf61efbe897",
-        "description": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /404.html": {
-      "jsonName": "404-html-516",
-      "internalComponentName": "Component404Html",
-      "path": "/404.html",
-      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "isCreatedByStatefulCreatePages": true,
-      "context": {},
-      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
-      "id": "SitePage /404.html",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "59bb63d43e8c574f21c9c1c68bdac0f2",
-        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-        "owner": "internal-data-bridge"
       }
     },
     "5c338c25-07dd-544f-b53c-352030cd861f": {
@@ -4992,6 +4929,69 @@
         "contentDigest": "0a31e3e273274aa8f87911490d91a05a",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /404/": {
+      "jsonName": "404-22d",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+      "pluginCreatorId": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d6b99ef587133810a262fdd5d648dc96",
+        "description": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+      "pluginCreatorId": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8e7e7791aa905934a7022bf61efbe897",
+        "description": "7d72a52f-73bf-5a01-b3d8-01e84bd059a0",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "componentPath": "/Projekty/amadeuszgrzesiak/strona/agrzesiak/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "59bb63d43e8c574f21c9c1c68bdac0f2",
+        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+        "owner": "internal-data-bridge"
       }
     }
   },
