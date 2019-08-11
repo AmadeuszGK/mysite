@@ -18,6 +18,21 @@ import "animate.css/animate.min.css";
 import Loader from 'react-loader-spinner'
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
+
+  const script = document.createElement("script");
+  script.src = "/delaunay.js";
+  script.async = true;
+  document.body.appendChild(script);
+
+  const script1 = document.createElement("script");
+  script1.src = "/require.js";
+  script1.async = true; 
+  document.body.appendChild(script1);
+
+  const script2 = document.createElement("script");
+  script2.src = "/canvas.js";
+  script2.async = true; 
+  document.body.appendChild(script2);
 }
 
 
@@ -58,21 +73,6 @@ class Layout extends React.Component {
   }
 
   componentDidMount () {
-    const script = document.createElement("script");
-  script.src = "/delaunay.js";
-  script.async = true;
-  document.body.appendChild(script);
-
-  const script1 = document.createElement("script");
-  script1.src = "/require.js";
-  script1.async = true; 
-  document.body.appendChild(script1);
-
-  const script2 = document.createElement("script");
-  script2.src = "/canvas.js";
-  script2.async = true; 
-  document.body.appendChild(script2);
-
     this.setState({ isLoading: false });
   }
 
