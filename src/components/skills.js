@@ -2,6 +2,19 @@ import PropTypes from "prop-types";
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import javascript from "../images/javascript.png"
+import html5 from "../images/html5.png"
+import css3 from "../images/css3.png"
+import angular from "../images/angular.png"
+import reactjs from "../images/reactjs.png"
+import firebase from "../images/firebase.png"
+import sass from "../images/sass.png"
+import es6 from "../images/es6.png"
+import bootstrap from "../images/bootstrap.png"
+import wordpress from "../images/wordpress.png"
+import photoshop from "../images/photoshop.png"
+import figma from "../images/figma.png"
+
 const Skills = ({ siteTitle }) => (
   <section className="section-skills" id="section-skills">
     <div className="skills-box">
@@ -45,23 +58,23 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../javascript.png"
+              src={javascript}
               alt="javascript"
             />
             <p className="skill-text">javascript</p>
           </div>
           <div className="skill-container">
-            <img className="skill-image" src="../../../html5.png" alt="html" />
+            <img className="skill-image" src={html5} alt="html" />
             <p className="skill-text">html 5</p>
           </div>
           <div className="skill-container">
-            <img className="skill-image" src="../../../css3.png" alt="css" />
+            <img className="skill-image" src={css3} alt="css" />
             <p className="skill-text">css 3</p>
           </div>
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../angular.png"
+              src={angular}
               alt="angular"
             />
             <p className="skill-text">angular 2</p>
@@ -69,7 +82,7 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../reactjs.png"
+              src={reactjs}
               alt="react"
             />
             <p className="skill-text">react js</p>
@@ -77,23 +90,23 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../firebase.png"
+              src={firebase}
               alt="firebase"
             />
             <p className="skill-text">firebase</p>
           </div>
           <div className="skill-container">
-            <img className="skill-image" src="../../../sass.png" alt="sass" />
+            <img className="skill-image" src={sass} alt="sass" />
             <p className="skill-text">sass</p>
           </div>
           <div className="skill-container">
-            <img className="skill-image" src="../../../es6.png" alt="es6" />
+            <img className="skill-image" src={es6} alt="es6" />
             <p className="skill-text">es6</p>
           </div>
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../bootstrap.png"
+              src={bootstrap}
               alt="bootstrap"
             />
             <p className="skill-text">bootstrap</p>
@@ -101,7 +114,7 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../wordpress.png"
+              src={wordpress}
               alt="wordpress"
             />
             <p className="skill-text">wordpress</p>
@@ -109,13 +122,13 @@ const Skills = ({ siteTitle }) => (
           <div className="skill-container">
             <img
               className="skill-image"
-              src="../../../photoshop.png"
+              src={photoshop}
               alt="photoshop"
             />
             <p className="skill-text">photoshop</p>
           </div>
           <div className="skill-container">
-            <img className="skill-image" src="../../../figma.png" alt="figma" />
+            <img className="skill-image" src={figma} alt="figma" />
             <p className="skill-text">figma</p>
           </div>
         </ScrollAnimation>

@@ -2,6 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "gatsby";
 
+import linekdinWhite from '../images/linkedin-brands-white.png'
+import facebookWhite from '../images/facebook-square-brands-white.png'
+import phoneWhite from '../images/phone-solid-white.png'
+import envelopeWhite from '../images/envelope-regular-white.png'
+
 class  Menu extends React.Component  {
 
   render() {
@@ -48,25 +53,24 @@ class  Menu extends React.Component  {
         <div className="side-menu-social">
           <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160" target="_blank" rel="noopener noreferrer">
             {" "}
-            <img src="../../../linkedin-brands-white.png" alt="linked" />
+            <img src={linekdinWhite} alt="linked" />
           </a>
           <a href="https://www.facebook.com/grzesiak.amadeusz" target="_blank" rel="noopener noreferrer">
             <img
-              src="../../../facebook-square-brands-white.png"
-              alt="facebook"
+              src={facebookWhite} alt="facebook"
             />
           </a>
         </div>
         <div className="side-menu-contact">
           <a href="tel:796536228">
             {" "}
-            <img src="../../../phone-solid-white.png" alt="phone" />+48 796 536
+            <img src={phoneWhite} alt="phone" />+48 796 536
             228
           </a>
         </div>
         <div className="side-menu-contact">
           <a href="mailto:grzesiak.amadeusz@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="../../../envelope-regular-white.png" alt="email" />
+            <img src={envelopeWhite} alt="email" />
             grzesiak.amadeusz@gmail.com
           </a>
         </div>

@@ -2,6 +2,12 @@ import PropTypes from "prop-types";
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import envelope from '../images/envelope-regular.png'
+import phone from '../images/phone-solid.png'
+import linkedin from '../images/linkedin-brands.png'
+import facebook from '../images/facebook-square-brands.png'
+import responsive from '../images/responsive.png'
+
 const Contact = ({ siteTitle }) => (
   <section className="section-contact" id="section-contact">
     <div className="contact-box">
@@ -21,8 +27,6 @@ const Contact = ({ siteTitle }) => (
           <br />
           współpracę
         </h2>
-        {/* 
-                <div className="contact-bg-number">09</div> */}
 
         <p>
           Możesz mnie znaleźć w paru miejscach w sieci, ale jeśli wolisz zrobić
@@ -32,27 +36,27 @@ const Contact = ({ siteTitle }) => (
         <div className="contact-social">
           <div className="contact-social-item">
             <a href="mailto:grzesiak.amadeusz@gmail.com">
-              <img src="../../../envelope-regular.png" alt="email" />
+              <img src={envelope} alt="email" />
               grzesiak.amadeusz@gmail.com
             </a>
           </div>
           <div className="contact-social-item">
             <a href="tel:796536228">
               {" "}
-              <img src="../../../phone-solid.png" alt="phone" />
+              <img src={phone} alt="phone" />
               +48 796 536 228
             </a>
           </div>
           <div className="contact-social-item">
             <a href="https://www.linkedin.com/in/amadeusz-grzesiak-78ab61160">
               {" "}
-              <img src="../../../linkedin-brands.png" alt="linked" />
+              <img src={linkedin} alt="linked" />
               linkedin
             </a>
           </div>
           <div className="contact-social-item">
             <a href="https://www.facebook.com/grzesiak.amadeusz">
-              <img src="../../../facebook-square-brands.png" alt="facebook" />
+              <img src={facebook} alt="facebook" />
               facebook
             </a>
           </div>
@@ -65,13 +69,9 @@ const Contact = ({ siteTitle }) => (
         delay={600}
         animateOnce={true}
       >
-        <img src="../../../responsive.png" alt="responsive screens" />
+        <img src={responsive} alt="responsive screens" />
       </ScrollAnimation>
-      {/* <div className="contact-form">
-                <input type="text" placeholder="twój e-mail" type="email"></input>
-                <textarea type="text" placeholder="w czym mogę Ci pomóc?" className="message-input"  type="text"></textarea>
-                <button className="send-button">wyślij</button>
-            </div> */}
+
     </div>
   </section>
 );

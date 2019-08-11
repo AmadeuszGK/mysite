@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "gatsby";
 
+import arrowsWhite from "../images/arrows-white.svg"
+
 function Header() {
   const headerText = "<FRONT-END DEVELOPER />";
 
@@ -22,9 +24,8 @@ function Header() {
           </p>
         </div>
         <Link className="scroll-down" to="/#section-about-me">
-          {/* <p>SCROLL DOWN</p> */}
           <div className="scroll-img-container">
-            <img src="../../../arrows-white.svg" alt="arrow" />
+            <img src={arrowsWhite} alt="arrow" />
           </div>
         </Link>
       </div>

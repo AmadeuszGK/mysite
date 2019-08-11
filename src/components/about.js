@@ -3,7 +3,7 @@ import React from "react";
 import $ from "jquery";
 import ScrollAnimation from "react-animate-on-scroll";
 
-////////////// JQUERY TYPING START ////////////////////
+//////////////  TYPING START ////////////////////
 var words = [
   "QUADRIGA GMBH",
   "GOODSIDE",
@@ -53,10 +53,8 @@ var wordflick = function() {
   }, speed);
 };
 
-// $(document).ready(function() {
-//   wordflick();
-// });
-////////////// JQUERY TYPING END ////////////////////
+////////////// TYPING END ////////////////////
+
 
 class About extends React.Component {
 

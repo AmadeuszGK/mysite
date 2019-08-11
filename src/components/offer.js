@@ -2,6 +2,10 @@ import PropTypes from "prop-types";
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import www from "../images/www.png"
+import fix from "../images/fix.png"
+import settings from "../images/settings.png"
+
 const Offer = ({ siteTitle }) => (
   <section className="section-offer" id="section-offer">
     <div className="offer-grid">
@@ -33,7 +37,7 @@ const Offer = ({ siteTitle }) => (
           delay={300}
           animateOnce={true}
         >
-          <img src="../../../www.png" alt="sklepy stron internetowe" />
+          <img src={www} alt="sklepy stron internetowe" />
           <h3>Strony WWW i sklepy</h3>
           <p>
             Tworzę strony firmowe oraz sklepy internetowe. Wszystko dostosowane
@@ -47,7 +51,7 @@ const Offer = ({ siteTitle }) => (
           delay={700}
           animateOnce={true}
         >
-          <img src="../../../fix.png" alt="naprawa stron internetowych" />
+          <img src={fix} alt="naprawa stron internetowych" />
           <h3>Naprawa starych stron</h3>
           <p>
             Internet jest pełen zepsutych, zaniedbanych lub przestarzałych stron
@@ -61,7 +65,7 @@ const Offer = ({ siteTitle }) => (
           delay={1100}
           animateOnce={true}
         >
-          <img src="../../../settings.png" alt="adminiastracja stron" />
+          <img src={settings} alt="adminiastracja stron" />
           <h3>Administrowanie stron</h3>
           <p>
             Moi klienci zawsze mogą na mnie liczyć, pomagam w obsłudze stron i

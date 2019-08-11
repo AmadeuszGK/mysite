@@ -1,4 +1,3 @@
-
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "./header";
@@ -27,27 +26,31 @@ class Layout extends React.Component {
 
   constructor () {
     super(); 
-    this.state = {isLoading: true} 
+    this.state = {
+      isLoading: true,
+      showMenu: false
+    } 
 
-    // const script = document.createElement("script");
-    // script.src = "/delaunay.js";
-    // script.async = true;
-    // document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.src = "/delaunay.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-    // const script1 = document.createElement("script");
-    // script1.src = "/require.js";
-    // script1.async = true; 
-    // document.body.appendChild(script1);
+    const script1 = document.createElement("script");
+    script1.src = "/require.js";
+    script1.async = true; 
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.src = "/canvas.js";
+    script2.async = true; 
+    document.body.appendChild(script2);
 
 
     // document.title = "Amadesz Grzesiak - Front-end Developer | Strony i sklepy internetowe";
     // document.description = "Cześć, nazywam się Amadeusz i jestem kreatywnym front-end developerem z Jeleniej Góry. Stwórzmy coś razem!";
     // document.lang = "pl-PL";
 
-    this.state = {
-      isLoading: true,
-      showMenu: false
-    }
   }
   
   toglleMenu = () => {
@@ -57,10 +60,6 @@ class Layout extends React.Component {
 
   componentDidMount () {
     this.setState({ isLoading: false });
-
-    const script2 = document.createElement("script");
-    script2.src = "/canvas.js";
-    document.body.appendChild(script2);
   }
 
 

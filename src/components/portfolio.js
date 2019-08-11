@@ -2,6 +2,15 @@ import PropTypes from "prop-types";
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import promaticGamesLogo from "../images/promaticgames-logo.png"
+import agrzesiakLogo from "../images/agrzesiak-logo.png"
+import wolnosci14Logo from "../images/wolnosci14-logo.png"
+import chiarashopLogo from "../images/chiarashop-logo.png"
+import inleiLogo from "../images/inlei-logo.png"
+import goodsideLogo from "../images/goodside-logo.png"
+
+let promaticgamesBg = "../images/promaticgames-bg.jpg"
+
 class Portfolio extends React.Component {
   constructor() {
     super();
@@ -33,7 +42,7 @@ class Portfolio extends React.Component {
       id: 1,
       name: "amadeuszgrzesiak.com",
       desc:
-        "Moje portfolio, które stworzyłem przy użyciu nowoczesnego generatora stron statycznych GatsbyJS, który oparty jest o ReactJS. Kod strony możesz zobaczyć tutaj.",
+        "Moje portfolio, które stworzyłem przy użyciu nowoczesnego generatora stron statycznych Gatsby JS, który oparty jest o React JS. Kod strony możesz zobaczyć tutaj.",
       link: "https://github.com/AmadeuszGK/mysite",
       linkText: "github",
       bg: "url('agrzesiak-bg.jpg')"
@@ -120,7 +129,7 @@ class Portfolio extends React.Component {
                 onClick={this.changeItem0.bind(this)}
               >
                 <img
-                  src="../../../promaticgames-logo.png"
+                  src={promaticGamesLogo}
                   alt="promatic games"
                 />
               </div>
@@ -129,7 +138,7 @@ class Portfolio extends React.Component {
                 onClick={this.changeItem1.bind(this)}
               >
                 <img
-                  src="../../../agrzesiak-logo.png"
+                  src={agrzesiakLogo}
                   alt="amadeusz grzesiak"
                 />
               </div>
@@ -137,25 +146,25 @@ class Portfolio extends React.Component {
                 className="portfolio-item"
                 onClick={this.changeItem2.bind(this)}
               >
-                <img src="../../../wolnosci14-logo.png" alt="wolności 14" />
+                <img src={wolnosci14Logo} alt="wolności 14" />
               </div>
               <div
                 className="portfolio-item"
                 onClick={this.changeItem3.bind(this)}
               >
-                <img src="../../../chiarashop-logo.png" alt="chiarashop" />
+                <img src={chiarashopLogo} alt="chiarashop" />
               </div>
               <div
                 className="portfolio-item"
                 onClick={this.changeItem4.bind(this)}
               >
-                <img src="../../../inlei-logo.png" alt="inlei" />
+                <img src={inleiLogo} alt="inlei" />
               </div>
               <div
                 className="portfolio-item"
                 onClick={this.changeItem5.bind(this)}
               >
-                <img src="../../../goodside-logo.png" alt="goodside" />
+                <img src={goodsideLogo} alt="goodside" />
               </div>
             </div>
 
@@ -163,7 +172,7 @@ class Portfolio extends React.Component {
               <div className="portfolio-item">
                 <a href="https://github.com/AmadeuszGK/mysite" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="../../../agrzesiak-logo.png"
+                    src={agrzesiakLogo}
                     alt="amadeusz grzesiak"
                   />
                 </a>
@@ -171,29 +180,29 @@ class Portfolio extends React.Component {
               <div className="portfolio-item">
                 <a href="https://promaticgames.com" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="../../../promaticgames-logo.png"
+                    src={promaticGamesLogo}
                     alt="promatic games"
                   />
                 </a>
               </div>
               <div className="portfolio-item">
                 <a href="http://wolnosci14.pl/" target="_blank" rel="noopener noreferrer">
-                  <img src="../../../wolnosci14-logo.png" alt="wolności 14" />
+                  <img src={wolnosci14Logo} alt="wolności 14" />
                 </a>
               </div>
               <div className="portfolio-item">
                 <a href="https://chiarashop.pl/" target="_blank" rel="noopener noreferrer">
-                  <img src="../../../chiarashop-logo.png" alt="chiarashop" />
+                  <img src={chiarashopLogo} alt="chiarashop" />
                 </a>
               </div>
               <div className="portfolio-item">
                 <a href="https://inlei.pl/" target="_blank" rel="noopener noreferrer">
-                  <img src="../../../inlei-logo.png" alt="inlei" />
+                  <img src={inleiLogo} alt="inlei" />
                 </a>
               </div>
               <div className="portfolio-item">
                 <a href="http://goodside.com.pl" target="_blank" rel="noopener noreferrer">
-                  <img src="../../../goodside-logo.png" alt="goodside" />
+                  <img src={goodsideLogo} alt="goodside" />
                 </a>
               </div>
             </div>
