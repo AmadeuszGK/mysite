@@ -62,7 +62,7 @@ class Layout extends React.Component {
       <div>
   
           <div className={this.state.showMenu ? "website-content--show-menu" : "website-content"}>
-            <div className="loader-content" style={{display: this.state.isLoading ? 'flex' : 'none', backgroundImage: "url('../images/header-bg-mac-min.jpg')", backgroundPosition: center, backgroundRepeat: no-repeat, backgroundSize: cover, backgroundAttachment: fixed } }>
+            <div className="loader-content" style={{display: this.state.isLoading ? 'flex' : 'none', backgroundImage: "url('../images/header-bg-mac-min.jpg')", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundAttachment: "fixed" } }>
               <img src={loader} alt="arrow" height={110} width={110}/>
             </div>
 

@@ -3,11 +3,12 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import promaticGamesLogo from "../images/promaticgames-logo.png"
-import agrzesiakLogo from "../images/agrzesiak-logo.png"
+//import agrzesiakLogo from "../images/agrzesiak-logo.png"
 import wolnosci14Logo from "../images/wolnosci14-logo.png"
 import chiarashopLogo from "../images/chiarashop-logo.png"
 import inleiLogo from "../images/inlei-logo.png"
 import goodsideLogo from "../images/goodside-logo.png"
+import quadrigaLogo from "../images/quadriga-logo.png"
 
 let promaticgamesBg = "../images/promaticgames-bg.jpg"
 
@@ -40,12 +41,12 @@ class Portfolio extends React.Component {
   changeItem1() {
     this.setState({
       id: 1,
-      name: "amadeuszgrzesiak.com",
+      name: "goodside.com.pl",
       desc:
-        "Moje portfolio, które stworzyłem przy użyciu nowoczesnego generatora stron statycznych Gatsby JS, który oparty jest o React JS. Kod strony możesz zobaczyć tutaj.",
-      link: "https://github.com/AmadeuszGK/mysite",
-      linkText: "github",
-      bg: "url('agrzesiak-bg.jpg')"
+        "Wizytówka warszawskiej agencji eventowej Goodside.",
+      link: "http://goodside.com.pl/",
+      linkText: "goodside.com.pl",
+      bg: "url('goodside-bg.jpg')"
     });
   }
 
@@ -88,12 +89,12 @@ class Portfolio extends React.Component {
   changeItem5() {
     this.setState({
       id: 5,
-      name: "Goodside",
+      name: "Quadriga",
       desc:
-        "Przykład typowej, nowoczesnej strony - wizytówki stworzonej dla warszawskiej agencji eventowej Goodside.",
-      link: "http://goodside.com.pl",
-      linkText: "goodside.com.pl",
-      bg: "url('goodside-bg.jpg')"
+        "Przykład minimalistycznej, nowoczesnej strony - wizytówki stworzonej dla niemieckiej firmy Quadriga GmBH",
+      link: "http://quadriga.one",
+      linkText: "quadriga.one",
+      bg: "url('quadriga-bg.jpg')"
     });
   }
 
@@ -138,8 +139,8 @@ class Portfolio extends React.Component {
                 onClick={this.changeItem1.bind(this)}
               >
                 <img
-                  src={agrzesiakLogo}
-                  alt="amadeusz grzesiak"
+                  src={goodsideLogo}
+                  alt="goodside"
                 />
               </div>
               <div
@@ -164,16 +165,16 @@ class Portfolio extends React.Component {
                 className="portfolio-item"
                 onClick={this.changeItem5.bind(this)}
               >
-                <img src={goodsideLogo} alt="goodside" />
+                <img src={quadrigaLogo} alt="quadriga" />
               </div>
             </div>
 
             <div className="portfolio-items-mobile">
               <div className="portfolio-item">
-                <a href="https://github.com/AmadeuszGK/mysite" target="_blank" rel="noopener noreferrer">
+                <a href="http://goodside.com.pl" target="_blank" rel="noopener noreferrer">
                   <img
-                    src={agrzesiakLogo}
-                    alt="amadeusz grzesiak"
+                    src={goodsideLogo}
+                    alt="goodside"
                   />
                 </a>
               </div>
@@ -201,8 +202,8 @@ class Portfolio extends React.Component {
                 </a>
               </div>
               <div className="portfolio-item">
-                <a href="http://goodside.com.pl" target="_blank" rel="noopener noreferrer">
-                  <img src={goodsideLogo} alt="goodside" />
+                <a href="http://quadriga.one" target="_blank" rel="noopener noreferrer">
+                  <img src={quadrigaLogo} alt="quadriga" />
                 </a>
               </div>
             </div>
